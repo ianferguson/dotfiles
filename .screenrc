@@ -1,0 +1,10 @@
+#hardstatus alwayslastline
+hardstatus alwayslastline "%{= bg} [ %{G}%h %{g}] %-w%{= rW}%n*%t%{= bg}%+w%< %{= bW}%-=%D %d %M %Y %c:%s%{-}"
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
+#hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
+
+startup_message       off 
+vbell on
+vbell_msg "meow"
+defscrollback 10000
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
