@@ -1,10 +1,23 @@
-#hardstatus alwayslastline
-hardstatus alwayslastline "%{= bg} [ %{G}%h %{g}] %-w%{= rW}%n*%t%{= bg}%+w%< %{= bW}%-=%D %d %M %Y %c:%s%{-}"
+#hardstatus alwayslastline "%{= bg} [ %{G}%h %{g}] %-w%{= rW}%n*%t%{= bg}%+w%< %{= bW}%-=%D %d %M %Y %c:%s%{-}"
 #hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
 #hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
 
-startup_message       off 
+startup_message       off
 vbell on
 vbell_msg "meow"
-defscrollback 10000
 pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %{..Y}"
+
+screen -t top 0 glances
+
+#make it last so we default to here
+chdir $HOME/git/
+screen -t git 1 
+
+#set the default dir back to $HOME
+chdir 
+
+startup_message off
+defscrollback 100000

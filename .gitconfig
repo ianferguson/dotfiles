@@ -1,5 +1,41 @@
 [user]
 	name = ian
 	email = ian@tremblingfire.com
+[core]
+        pager=less -+$LESS -FRX
+        autocrlf = false
+    	excludesfile = /Users/iferguson/.gitignore_global
+[branch]
+        autosetupmerge = true
+        autosetuprebase = always
+[push]
+        # 'git push' will push the current branch to its tracking branch
+        # the usual default is to push all branches
+        default = tracking
+[diff]
+        renames = copy # makes the diff much shorter when moving or copying files
+        renamelimit = 0
+    	algorithm = patience
 [color]
-	ui = true
+        ui = auto
+        branch = auto
+        status = auto
+        diff = auto
+        interactive = auto
+[repack]
+        usedeltabaseoffset = true # >git 1.5
+[rerere]
+        enabled = true
+[alias]
+        ribbon = tag --force _ribbon origin/develop
+        catchup = log --patch --reverse --topo-order _ribbon..origin/develop
+        up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
+        s = status .
+        sg = status
+        # add your own here
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
