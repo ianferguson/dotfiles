@@ -4,7 +4,7 @@
 [core]
         pager=less -+$LESS -FRX
         autocrlf = false
-    	excludesfile = /Users/iferguson/.gitignore_global
+        excludesfile = ~/.gitignore
 [branch]
         autosetupmerge = true
         autosetuprebase = always
@@ -32,10 +32,3 @@
         up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
         s = status .
         sg = status
-        # add your own here
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
