@@ -2,6 +2,7 @@
 #hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
 #hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
 
+shell /usr/local/bin/fish
 startup_message       off
 vbell on
 vbell_msg "meow"
@@ -10,7 +11,7 @@ hardstatus on
 hardstatus alwayslastline
 hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %{..Y}"
 
-screen -t top 0 glances
+screen -t top 0 top 
 
 #make it last so we default to here
 chdir $HOME/git/
