@@ -11,7 +11,7 @@ hardstatus on
 hardstatus alwayslastline
 hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %{..Y}"
 
-screen -t top 0 top 
+screen -t top 0 htop 
 
 #make it last so we default to here
 chdir $HOME/git/
