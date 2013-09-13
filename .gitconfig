@@ -1,34 +1,36 @@
 [user]
-	name = ian
-	email = ian@tremblingfire.com
+  name = ian
+  email = ian@tremblingfire.com 
 [core]
-        pager=less -+$LESS -FRX
-        autocrlf = false
-        excludesfile = ~/.gitignore
+  pager=less -+$LESS -FRX
+  autocrlf = false
+  excludesfile = ~/.gitignore
 [branch]
-        autosetupmerge = true
-        autosetuprebase = always
+  autosetupmerge = true
+  autosetuprebase = always
 [push]
-        # 'git push' will push the current branch to its tracking branch
-        # the usual default is to push all branches
-        default = tracking
+  #'git push' will push the current branch to its tracking branch
+  #the usual default is to push all branches
+  default = tracking
 [diff]
-        renames = copy # makes the diff much shorter when moving or copying files
-        renamelimit = 0
-    	algorithm = patience
+  renames = copy # makes the diff much shorter when moving or copying files
+  renamelimit = 0
+  algorithm = patience
+  tool = vimdiff
+  prompt = false
 [color]
-        ui = auto
-        branch = auto
-        status = auto
-        diff = auto
-        interactive = auto
+  ui = auto
+  branch = auto
+  status = auto
+  diff = auto
+  interactive = auto
 [repack]
-        usedeltabaseoffset = true # >git 1.5
+  usedeltabaseoffset = true # >git 1.5
 [rerere]
-        enabled = true
+  enabled = true
 [alias]
-        ribbon = tag --force _ribbon origin/develop
-        catchup = log --patch --reverse --topo-order _ribbon..origin/develop
-        up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
-        s = status .
-        sg = status
+  ribbon = tag --force _ribbon origin/develop
+  catchup = log --patch --reverse --topo-order _ribbon..origin/develop
+  up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
+  s = status .
+  sg = status

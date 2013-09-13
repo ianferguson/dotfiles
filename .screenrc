@@ -13,6 +13,10 @@ hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %{..Y}"
 
 screen -t top 0 htop 
 
+#TODO: ssh into vagrant
+chdir $HOME/vagrant/docker
+screen -t vnt 2 
+
 #make it last so we default to here
 chdir $HOME/git/
 screen -t git 1 
