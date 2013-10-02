@@ -30,7 +30,7 @@
   enabled = true
 [alias]
   ribbon = tag --force _ribbon origin/develop
-  catchup = log --patch --reverse --topo-order _ribbon..origin/develop
+  catchup = log -w --patch --reverse --topo-order _ribbon..origin/develop
   up = !sh -c 'git pull --rebase --prune && git log --pretty=format:\"%Cred%ae %Creset- %C(yellow)%s %Creset(%ar)\" HEAD@{1}..'
   s = status .
   sg = status
