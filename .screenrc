@@ -1,16 +1,31 @@
+
+# Messages ####################################################################
+nethack on              # be careful! new screen tonight. (changes messages to nethack style lulz)
+sorendition "kg"        # makes screen messages stand out, black on green
+msgwait 2               # default message display is too long
+startup_message off     # boooring!
+version                 # echo version on startup, 'cause it's nice to know
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+# Misc ########################################################################
+shell /usr/local/bin/fish
+autodetach on           # A.K.A. the "save your bacon" option
+altscreen on            # full-screen programs (less, Vim) should be cleared once quit
+defutf8 on              # allow utf characters
+vbell on
+vbell_msg "meow"
+
+# Hardstatus/tab display ####################################################
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %{..Y}"
+# Don't remember what the ones below do, but might be things I used to use?
 #hardstatus alwayslastline "%{= bg} [ %{G}%h %{g}] %-w%{= rW}%n*%t%{= bg}%+w%< %{= bW}%-=%D %d %M %Y %c:%s%{-}"
 #hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'
 #hardstatus string '%{= mK}%-Lw%{= KW}%50>%n%f* %t%{= mK}%+Lw%< %{= kG}%-=%D %d %M %Y %c:%s%{-}'
 
-shell /usr/local/bin/fish
-startup_message       off
-vbell on
-vbell_msg "meow"
-pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
-hardstatus on
-hardstatus alwayslastline
-hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %h %{..Y}"
 
+# default tabs set up ########################################################
 screen -t top 0 htop 
 
 #TODO: ssh into vagrant
@@ -24,5 +39,8 @@ screen -t git 1
 #set the default dir back to $HOME
 chdir 
 
-startup_message off
-defscrollback 100000
+# Scroll-back mode ############################################################
+ignorecase on           # case insensitive search in scroll-back mode
+defscrollback 100000    #default scroll back is tinyyyy
+bufferfile $HOME/.screen-exchange  # keep the buffer exchange file out of /tmp
+
