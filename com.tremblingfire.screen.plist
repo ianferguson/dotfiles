@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- this should be placed/symlinked into your ~/Library/LaunchAgents/ -->
+<!-- then run launchctl load ~/Library/LaunchAgents/com.tremblingfire.screen and you should be good to go -->
 <plist version="1.0">
 <dict>
     <key>KeepAlive</key>
