@@ -39,17 +39,17 @@ defscrollback 100000    #default scroll back is tinyyyy
 bufferfile $HOME/.screen-exchange  # keep the buffer exchange file out of /tmp
 
 # default tabs set up ########################################################
-screen -t top 0 htop 
+#screen -t top 0 htop 
 
 #TODO: ssh into vagrant
-chdir $HOME/vagrant/docker
-screen -t vnt 2 
+#chdir $HOME/vagrant/docker
+#screen -t vnt 2 
 
 #make it last so we default to here
-chdir $HOME/git/
-screen -t git 1 
+#chdir $HOME/git/
+#screen -t git 1 
 
 #set the default dir back to $HOME
-chdir 
+#chdir 
 
 
