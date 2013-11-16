@@ -1,6 +1,7 @@
 [user]
   name = ian
   email = ian@tremblingfire.com 
+	signingkey = F02FD45B
 [core]
   pager=less -+$LESS -FRX
   autocrlf = false
