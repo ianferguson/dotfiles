@@ -69,6 +69,7 @@ s-lang
 scons
 screen
 sqlite
+stow
 tig
 tmux
 tomcat

@@ -6,3 +6,7 @@ filetype indent on
 filetype on
 filetype plugin on
 syntax on
+if &shell =~# 'fish$'
+        set shell=sh
+endif
+execute pathogen#infect()

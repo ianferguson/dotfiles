@@ -1,7 +1,0 @@
-.config/fish/fish_history
-.config/fish/generated_completions
-.config/fish/fish_read_history
-.config/fish/fishd.*
-.settings
-.project
-.classpath
