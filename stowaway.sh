@@ -5,6 +5,8 @@
 set -e
 set -o pipefail
 
+pushd $(dirname $0) > /dev/null
+
 #### Setup Homebrew ####
 #TODO
 
@@ -19,6 +21,7 @@ elif [ "Darwin" = "$OS" ]; then
     brew install stow
 else
     "Don't know what to do with stowaways on OS named $OS"
+    exit 1;
 fi
 
 #### get dotfiles repo ####
@@ -41,6 +44,6 @@ for STOWAWAY in ${STOWAWAYS[@]}; do
     stow -R --adopt -t ~ $STOWAWAY
 done;
 
-popd  > /dev/null
-popd  > /dev/null
-
+popd > /dev/null
+popd > /dev/null
+popd > /dev/null
