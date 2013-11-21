@@ -12,15 +12,18 @@ pushd $(dirname $0) > /dev/null
 
 #### OS X or Linux? ####
 #TODO split bash packages that get stowed based on OS
-OS=$(uname -s)
-echo "proceeding with hassling stowaways for $OS!"
+UNAME=$(uname -s)
+OS="unknown"
+echo "proceeding with hassling stowaways for $UNAME"
 
-if [ "Linux" = "$OS" ]; then
+if [ "Linux" = "$UNAME" ]; then
     sudo apt-get install stow;
-elif [ "Darwin" = "$OS" ]; then
+    OS="linux"
+elif [ "Darwin" = "$UNAME" ]; then
     brew install stow
+    OS="osx"
 else
-    "Don't know what to do with stowaways on OS named $OS"
+    "Don't know what to do with stowaways with a uname of $UNAME"
     exit 1;
 fi
 
