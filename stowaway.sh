@@ -38,7 +38,7 @@ stow --ignore ".DS_Store" -t ~ stow
 STOWAWAYS=(fish git psql screen tmux htop bash_$OS mongo ssh vim)
 for STOWAWAY in ${STOWAWAYS[@]}; do
     echo "stowing $STOWAWAY"
-    stow -t ~ $STOWAWAY
+    stow -R --adopt -t ~ $STOWAWAY
 done;
 
 popd  > /dev/null
