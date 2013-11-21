@@ -5,6 +5,22 @@
 set -e
 set -o pipefail
 
+#### Setup Homebrew ####
+#TODO
+
+#### OS X or Linux? ####
+#TODO split bash packages that get stowed based on OS
+OS=$(uname -s)
+echo "proceeding with hassling stowaways for $OS!"
+
+if [ "Linux" = "$OS" ]; then
+    sudo apt-get install stow;
+elif [ "Darwin" = "$OS" ]; then
+    brew install stow
+else
+    "Don't know what to do with stowaways on OS named $OS"
+fi
+
 #### get dotfiles repo ####
 GITDIR="$HOME/git"
 mkdir -p "$GITDIR"
@@ -14,15 +30,12 @@ DOTREPO="dotfiles"
 DOTDIR="$GITDIR/$DOTREPO"
 pushd "$DOTDIR" > /dev/null
 
-#### Setup Homebrew ####
-#TODO
-
 #### Stow Stuff ####
 #first stow a stow ignore, so we avoid any DS_Store stuff forever
 echo "stowing stow files"
 stow --ignore ".DS_Store" -t ~ stow
 
-STOWAWAYS=(fish git psql screen tmux htop bash mongo ssh vim)
+STOWAWAYS=(fish git psql screen tmux htop bash_$OS mongo ssh vim)
 for STOWAWAY in ${STOWAWAYS[@]}; do
     echo "stowing $STOWAWAY"
     stow -t ~ $STOWAWAY
