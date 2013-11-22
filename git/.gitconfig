@@ -40,4 +40,11 @@
   s = status .
   sg = status
   co = checkout
+  a = add
+  aa = add .
+  c = commit
+  cm = commit -m
+  rb = rebase
+  rbi = rebase -i
+  m = merge
 
