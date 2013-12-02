@@ -46,5 +46,9 @@
   cm = commit -m
   rb = rebase
   rbi = rebase -i
+  rbc = rebase --continue
   m = merge
-
+  mf = merge --ff-only
+  logo = log --oneline
+  d = diff
+  dw = diff --word-diff
