@@ -49,6 +49,6 @@
   rbc = rebase --continue
   m = merge
   mf = merge --ff-only
-  logo = log --oneline
+  lo = log --oneline
   d = diff
   dw = diff --word-diff
