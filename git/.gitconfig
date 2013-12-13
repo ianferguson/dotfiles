@@ -43,10 +43,12 @@
   a = add
   aa = add .
   c = commit
+  ca = commit --amend
   cm = commit -m
   rb = rebase
   rbi = rebase -i
   rbc = rebase --continue
+  rba = rebase --abort
   m = merge
   mf = merge --ff-only
   lo = log --oneline
