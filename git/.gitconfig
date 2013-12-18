@@ -40,11 +40,14 @@
   cm = commit -m
   co = checkout
   cob = checkout -b
+  cp = cherry-pick
   d = diff
+  dt = difftool
   dw = diff --word-diff
   lo = log --oneline
   mm = merge
   mf = merge --ff-only
+  mt = mergetool
   pu = pull
   rb = rebase
   rbi = rebase -i
@@ -56,3 +59,5 @@
   stl = stash list
   stp = stash pop
   tree =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+[difftool]
+	prompt = false
