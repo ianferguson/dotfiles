@@ -41,9 +41,9 @@
   co = checkout
   cob = checkout -b
   cp = cherry-pick
-  d = diff
-  dt = difftool
-  dw = diff --word-diff
+  d = diff -w
+  dt = difftool -w
+  dw = diff --word-diff -w
   lo = log --oneline
   mm = merge
   mf = merge --ff-only
