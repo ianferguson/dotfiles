@@ -1,4 +1,3 @@
-ansible
 autoconf
 automake
 bash
@@ -15,7 +14,9 @@ fontconfig
 freetype
 gawk
 gdbm
+geoip
 gettext
+gh
 git
 git-flow
 glib
@@ -24,6 +25,7 @@ gnu-sed
 gnu-which
 gnupg
 gnutls
+go
 gpgme
 gradle
 groovy
@@ -47,20 +49,18 @@ libyaml
 loudmouth
 maven
 mcabber
-midnight-commander
+mercurial
 mongodb
-mplayer
-mplayershell
 nettle
 openssl
 ossp-uuid
 p11-kit
 parallel
 pkg-config
-play
 postgresql
 psutils
 pth
+pwgen
 python
 readline
 reattach-to-user-namespace
@@ -76,6 +76,7 @@ tomcat
 vim
 vimpager
 wget
+wireshark
 xml-coreutils
 xz
 yasm
