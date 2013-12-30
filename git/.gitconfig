@@ -1,7 +1,7 @@
 [user]
   name = ian
   email = ian@tremblingfire.com 
-	signingkey = F02FD45B
+  signingkey = F02FD45B
 [core]
   pager=less -+$LESS -FRX
   autocrlf = false
@@ -38,6 +38,7 @@
   c = commit
   ca = commit --amend
   cm = commit -m
+  cma = commit --amend
   co = checkout
   cob = checkout -b
   cp = cherry-pick
@@ -49,6 +50,7 @@
   mf = merge --ff-only
   mt = mergetool
   pu = pull
+  r = reset
   rb = rebase
   rbi = rebase -i
   rbc = rebase --continue
