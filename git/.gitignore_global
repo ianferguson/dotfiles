@@ -7,3 +7,4 @@
 .classpath
 .pgpass
 .DS_Store
+*.swp
