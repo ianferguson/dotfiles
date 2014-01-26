@@ -17,6 +17,7 @@ gdbm
 geoip
 gettext
 gh
+gist
 git
 git-flow
 glib
@@ -52,6 +53,7 @@ mcabber
 mercurial
 mongodb
 nettle
+nmap
 openssl
 ossp-uuid
 p11-kit
