@@ -36,15 +36,15 @@
   a = add
   aa = add .
   c = commit
-  ca = commit --amend
   cm = commit -m
   cma = commit --amend
   co = checkout
-  cob = checkout -b
   cp = cherry-pick
   d = diff -w
+  dss = diff --shortstat
   dt = difftool -w
   dw = diff --word-diff -w
+  ft = fetch --tags
   lo = log --oneline
   mm = merge
   mf = merge --ff-only
