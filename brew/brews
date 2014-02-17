@@ -54,6 +54,7 @@ mercurial
 mongodb
 nettle
 nmap
+node
 openssl
 ossp-uuid
 p11-kit
