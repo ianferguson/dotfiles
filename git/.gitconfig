@@ -35,13 +35,16 @@
 [alias]
   a = add
   aa = add .
+  b = branch
+  bd = branch -d
   c = commit
   cm = commit -m
   cma = commit --amend
   co = checkout
+  cb = checkout -b
   cp = cherry-pick
   d = diff -w
-  dss = diff --shortstat
+  ds = diff --shortstat
   dt = difftool -w
   dw = diff --word-diff -w
   ft = fetch --tags
