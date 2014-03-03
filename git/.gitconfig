@@ -2,6 +2,7 @@
   name = ian
   email = ian@tremblingfire.com 
   signingkey = F02FD45B
+
 [core]
   pager=less -+$LESS -FRX
   autocrlf = false
@@ -9,29 +10,36 @@
   #my dotfiles repo .gitignore with the .gitignore for global
   #usage that is stored inside that repo and managed with stow
   excludesfile = ~/.gitignore_global
+
 [branch]
   autosetupmerge = true
   autosetuprebase = always
+
 [push]
   #'git push' will push the current branch to its tracking branch
   #the usual default is to push all branches
   default = tracking
+
 [diff]
   renames = copy # makes the diff much shorter when moving or copying files
   renamelimit = 0
   algorithm = patience
   tool = vimdiff
   prompt = false
+
 [color]
   ui = auto
   branch = auto
   status = auto
   diff = auto
   interactive = auto
+
 [repack]
   usedeltabaseoffset = true # >git 1.5
+
 [rerere]
   enabled = true
+
 [alias]
   a = add
   aa = add .
@@ -41,19 +49,25 @@
   cm = commit -m
   cma = commit --amend
   co = checkout
+  cod = checkout .
+  cob = checkout -b
   cb = checkout -b
   cp = cherry-pick
   d = diff -w
   ds = diff --shortstat
   dt = difftool -w
   dw = diff --word-diff -w
+  fa = fetch --all
   ft = fetch --tags
   lo = log --oneline
+  lsr = ls-remote
   mm = merge
   mf = merge --ff-only
   mt = mergetool
   pu = pull
+  pt = push --tags
   r = reset
+  rh = reset HEAD^
   rb = rebase
   rbi = rebase -i
   rbc = rebase --continue
@@ -61,9 +75,11 @@
   s = status .
   sg = status
   st = stash
+  stc = stash clear
   stl = stash list
   stp = stash pop
   t = tag
   tree =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
 [difftool]
 	prompt = false
