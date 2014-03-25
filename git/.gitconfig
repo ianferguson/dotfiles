@@ -5,7 +5,7 @@
 
 [core]
   pager=less -+$LESS -FRX
-  autocrlf = false
+  autocrlf = input
   #named non-standardly to avoid mixing
   #my dotfiles repo .gitignore with the .gitignore for global
   #usage that is stored inside that repo and managed with stow
@@ -43,6 +43,7 @@
 [alias]
   a = add
   aa = add .
+  ap = add -p .
   b = branch
   bd = branch -d
   c = commit
