@@ -45,6 +45,7 @@
   aa = add .
   ap = add -p .
   b = branch
+  ba = branch -a
   bd = branch -d
   c = commit
   cm = commit -m
@@ -73,6 +74,8 @@
   rbi = rebase -i
   rbc = rebase --continue
   rba = rebase --abort
+  rp = remote prune
+  rpo = remote prune origin
   s = status .
   sg = status
   st = stash
