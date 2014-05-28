@@ -1,3 +1,4 @@
+ack
 autoconf
 automake
 bash
@@ -13,6 +14,7 @@ fish
 fontconfig
 freetype
 gawk
+gd
 gdbm
 geoip
 gettext
@@ -25,6 +27,7 @@ gmp
 gnu-sed
 gnu-which
 gnupg
+gnuplot
 gnutls
 go
 gpgme
@@ -34,6 +37,7 @@ htop-osx
 intltool
 ircii
 irssi
+jpeg
 jsonpp
 libassuan
 libevent
@@ -45,9 +49,11 @@ libotr
 libpng
 libssh2
 libtasn1
+libtiff
 libtool
 libyaml
 loudmouth
+lua
 maven
 mcabber
 mercurial
