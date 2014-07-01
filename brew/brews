@@ -33,6 +33,7 @@ go
 gpgme
 gradle
 groovy
+heroku-toolbelt
 htop-osx
 intltool
 ircii
