@@ -51,22 +51,15 @@
   cm = commit -m
   cma = commit --amend
   co = checkout
-  cod = checkout .
-  cob = checkout -b
   cb = checkout -b
   cp = cherry-pick
   d = diff -w
-  ds = diff --shortstat
-  dt = difftool -w
   dw = diff --word-diff -w
-  fa = fetch --all
-  ft = fetch --tags
+  fa = fetch --all --tags
   lo = log --oneline
   lsr = ls-remote
   mm = merge
   mf = merge --ff-only
-  mt = mergetool
-  pu = pull
   pt = push --tags
   r = reset
   rh = reset HEAD^
@@ -82,8 +75,8 @@
   stc = stash clear
   stl = stash list
   stp = stash pop
-  t = tag
   tree =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  treed =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all --date-order
 
 [difftool]
 	prompt = false
