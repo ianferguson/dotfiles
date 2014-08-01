@@ -3,10 +3,12 @@ autoconf
 automake
 bash
 bash-completion
+brew-cask
 brew-pip
 colortail
 coreutils
 curl
+darcs
 dterm
 emacs
 finch
@@ -58,6 +60,7 @@ lua
 maven
 mcabber
 mercurial
+mesos
 mongodb
 nettle
 nmap
@@ -75,10 +78,11 @@ python
 readline
 reattach-to-user-namespace
 ruby
+rxvt-unicode
 s-lang
 scons
-screen
 sqlite
+ssh-copy-id
 stow
 tig
 tmux

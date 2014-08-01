@@ -2,19 +2,35 @@
 
 set -e
 
-ruby -e brew-starter.rb 
-read -p "Install complete, press enter to continue..."
+echo "installing homebrew"
+#ruby -e brew-starter.rb 
 
-brew doctor
-read -p "Doctor check complete, press enter to continue..."
+echo "checking brew install for issues"
+brew doctor || true
 
+echo "updating brew indexes"
 brew update
-read -p "Update complete, press enter to run install of default brews..."
 
+echo "tapping caskroom"
+brew tap phinze/cask
+
+echo "installing brews"
 for BREW in $(cat brews); do
     echo "installing $BREW!"
     brew install $BREW
 done
 
-echo "you're done brewing, kick back and enjoy the 6 pack, bro!"
+echo "installing casks"
+for CASK in $(cat casks); do
+    echo "installing $CASK"
+    brew cask install $CASK --force
+done
+
+echo "cleaning up old versions"
+brew cleanup
+
+echo "double checking install health"
+brew doctor
+
+echo "you're done brewing"
 
