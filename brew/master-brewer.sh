@@ -13,6 +13,7 @@ brew update
 
 echo "tapping caskroom"
 brew tap phinze/cask
+brew upgrade
 
 echo "installing brews"
 for BREW in $(cat brews); do
@@ -25,6 +26,8 @@ for CASK in $(cat casks); do
     echo "installing $CASK"
     brew cask install $CASK --force
 done
+
+brew upgrade
 
 echo "cleaning up old versions"
 brew cleanup
