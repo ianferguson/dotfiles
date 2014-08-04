@@ -1,3 +1,7 @@
+tap caskroom/cask
+
+install caskroom/cask/brew-cask
+
 cask update
 
 cask install adium

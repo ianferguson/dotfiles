@@ -1,11 +1,6 @@
-#TODO: organize by purpose, rather than alphabetical order
-tap caskroom/cask
 tap homebrew/versions
 
 update
-
-#setup cask
-install caskroom/cask/brew-cask
 
 #setup gnu utils in place of os x provided enes
 install vim --override-system-vi
