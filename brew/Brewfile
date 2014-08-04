@@ -1,0 +1,78 @@
+#TODO: organize by purpose, rather than alphabetical order
+tap caskroom/cask
+tap homebrew/versions
+
+update
+
+#setup cask
+install caskroom/cask/brew-cask
+
+#setup gnu utils in place of os x provided enes
+install vim --override-system-vi
+install vimpager
+install coreutils
+install binutils
+install findutils --default-names
+install gawk
+install gnu-indent --default-names
+install gnu-sed --default-names
+install gnu-tar --default-names
+install gnu-which --default-names
+install gnutls --default-names
+install htop-osx
+install watch
+install wdiff --with-gettext
+install wget
+
+#key dev tools
+install bash
+install bash-completion
+install fish
+install git
+install tmux
+install curl
+install httpie
+install tomcat
+install gradle
+install maven
+install postgresql
+
+#langs
+install go
+install groovy
+install lua
+install ruby
+install python
+
+#other assorted things
+install gist
+install ack
+install brew-pip
+install darcs
+install dterm
+install emacs
+install fontconfig
+install freetype
+install gnupg
+install gpgme
+install heroku-toolbelt
+install jpeg
+install jsonpp
+install mercurial
+install nmap
+install node
+install parallel
+install pkg-config
+install psutils
+install pwgen
+install readline
+install rxvt-unicode
+install sqlite
+install ssh-copy-id
+install stow
+install tig
+
+pin tomcat
+pin postgresql
+
+cleanup

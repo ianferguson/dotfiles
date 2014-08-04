@@ -1,0 +1,32 @@
+cask update
+
+cask install adium
+cask install alfred
+cask install colloquy
+cask install dia
+cask install dropletmanager
+cask install eclipse-java
+cask install google-chrome
+cask install gpgtools
+cask install hipchat
+cask install iterm2
+cask install java
+cask install keka
+cask install lastfm
+cask install launchcontrol
+cask install launchrocket
+cask install pgadmin3
+cask install quicksilver
+cask install skype
+cask install slack
+cask install soqlxplorer
+cask install sourcetree
+cask install textwrangler
+cask install vagrant
+cask install virtualbox
+cask install visualvm
+cask install wireshark
+
+cask alfred link
+
+cask cleanup

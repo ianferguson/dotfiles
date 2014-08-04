@@ -7,20 +7,20 @@ set -o pipefail
 
 pushd $(dirname $0) > /dev/null
 
-#### Setup Homebrew ####
-#TODO
 
 #### OS X or Linux? ####
-#TODO split bash packages that get stowed based on OS
 UNAME=$(uname -s)
 OS="unknown"
 echo "proceeding with hassling stowaways for $UNAME"
 
 if [ "Linux" = "$UNAME" ]; then
     sudo apt-get install stow;
+    sudo apt-get install git;
     OS="linux"
 elif [ "Darwin" = "$UNAME" ]; then
-    brew install stow
+    #### Setup Homebrew ####
+    # brew script already includes bundling all the required dependencies
+    bash ./brew/brew-master.sh
     OS="osx"
 else
     "Don't know what to do with stowaways with a uname of $UNAME"
@@ -32,7 +32,7 @@ GITDIR="$HOME/git"
 mkdir -p "$GITDIR"
 pushd "$GITDIR" > /dev/null
 DOTREPO="dotfiles"
-#git clone https://github.com/ianferguson/dotfiles.git "$DOTREPO" #TODO add check for git first
+git clone https://github.com/ianferguson/dotfiles.git "$DOTREPO" 
 DOTDIR="$GITDIR/$DOTREPO"
 pushd "$DOTDIR" > /dev/null
 

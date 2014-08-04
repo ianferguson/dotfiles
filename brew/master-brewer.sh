@@ -3,7 +3,7 @@
 set -e
 
 echo "installing homebrew"
-#ruby -e brew-starter.rb 
+ruby -e brew-starter.rb 
 
 echo "checking brew install for issues"
 brew doctor || true
@@ -11,23 +11,11 @@ brew doctor || true
 echo "updating brew indexes"
 brew update
 
-echo "tapping caskroom"
-brew tap phinze/cask
-brew upgrade
-
 echo "installing brews"
-for BREW in $(cat brews); do
-    echo "installing $BREW!"
-    brew install $BREW
-done
+brew bundle Brewfile
 
 echo "installing casks"
-for CASK in $(cat casks); do
-    echo "installing $CASK"
-    brew cask install $CASK --force
-done
-
-brew upgrade
+brew bundle Caskfile
 
 echo "cleaning up old versions"
 brew cleanup
