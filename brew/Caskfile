@@ -6,6 +6,7 @@ cask update
 
 cask install adium
 cask install alfred
+cask install bettertouchtool 
 cask install colloquy
 cask install dia
 cask install dropletmanager
