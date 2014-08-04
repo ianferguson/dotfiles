@@ -15,16 +15,14 @@ echo "proceeding with hassling stowaways for $UNAME"
 
 if [ "Linux" = "$UNAME" ]; then
     #### install git and stow for linux ####
-    sudo apt-get install stow;
-    sudo apt-get install git;
+    sudo apt-get install stow git -y;
     OS="linux"
 elif [ "Darwin" = "$UNAME" ]; then
-    #### install Homebrew and git ####
+    #### install dev tools, Homebrew and git ####
+    xcode-select --install
     curl -fsSL "https://raw.github.com/Homebrew/homebrew/go/install" > "/tmp/install_brew.rb"
     ruby -e "/tmp/install_brew.rb"
     rm "/tmp/install_brew.rb"
-    ## this is the one brew dependency we have to have prior to bundling our brew files
-    brew install git
     OS="osx"
 else
     "Don't know what to do with stowaways with a uname of $UNAME"
