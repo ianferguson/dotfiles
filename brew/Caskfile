@@ -4,34 +4,56 @@ install caskroom/cask/brew-cask
 
 cask update
 
-cask install adium
-cask install alfred
-cask install bettertouchtool 
-cask install colloquy
-cask install dia
-cask install dropletmanager
-cask install eclipse-java
-cask install google-chrome
-cask install gpgtools
-cask install hipchat
-cask install iterm2
+# java stuff
 cask install java
-cask install keka
-cask install lastfm
-cask install launchcontrol
-cask install launchrocket
-cask install pgadmin3
-cask install quicksilver
-cask install skype
+cask install caskroom/versions/java6
+cask install caskroom/versions/java7
+cask install eclipse-java
+cask install visualvm
+
+# comms tools
+cask install adium
+cask install colloquy
+cask install hipchat
 cask install slack
+cask install skype
+
+# assorted dev tools
+cask install iterm2
+cask install pgadmin3
 cask install soqlxplorer
 cask install sourcetree
 cask install textwrangler
-cask install vagrant
-cask install virtualbox
-cask install visualvm
 cask install wireshark
 
+# app launchers and env managers
+cask install alfred
+cask install bettertouchtool 
+cask install dropletmanager
+cask install gpgtools
+cask install launchcontrol
+cask install launchrocket
+
+
+# assorted other things
+cask install google-chrome
+cask install keka
+cask install lastfm
+
+# VMs and images
+cask install vagrant
+cask install virtualbox
+
+# quicklook plugins
+cask install quicklook-json
+cask install quicklook-csv
+cask install qlcolorcode
+cask install qlmarkdown
+cask install qlprettypatch
+cask install betterzipql
+
+# link in casks to alfred
 cask alfred link
 
+# clear out any download caches
 cask cleanup
