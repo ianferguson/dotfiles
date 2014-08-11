@@ -23,7 +23,8 @@
 [diff]
   renames = copy # makes the diff much shorter when moving or copying files
   renamelimit = 0
-  algorithm = patience
+  # comment out patience for a bit, eclipse git integration is breaking on it =/
+  # algorithm = patience
   tool = vimdiff
   prompt = false
 
