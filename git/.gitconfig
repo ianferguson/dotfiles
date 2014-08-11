@@ -72,6 +72,9 @@
   rpo = remote prune origin
   s = status .
   sg = status
+  sm = submodule
+  smi = submodule init
+  smu  = submodule update
   st = stash
   stc = stash clear
   stl = stash list
