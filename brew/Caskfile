@@ -33,7 +33,7 @@ cask install dropletmanager
 cask install gpgtools
 cask install launchcontrol
 cask install launchrocket
-
+cask install switchresx
 
 # assorted other things
 cask install google-chrome
