@@ -22,7 +22,7 @@ elif [ "Darwin" = "$UNAME" ]; then
     xcode-select --install
     read -p "press return when xcode cli tools install is complete to continue"
     curl -fsSL "https://raw.github.com/Homebrew/homebrew/go/install" > "/tmp/install_brew.rb"
-    ruby -e "/tmp/install_brew.rb"
+    ruby "/tmp/install_brew.rb"
     rm "/tmp/install_brew.rb"
     OS="osx"
 else
@@ -30,12 +30,18 @@ else
     exit 1;
 fi
 
+
+#### generate new ssh keys ####
+ssh-keygen
+
+read -p "about to clone dotfiles repo, go ahead and add your new ssh key to github first, press enter when done"
+
 #### get dotfiles repo ####
 GITDIR="$HOME/git"
 mkdir -p "$GITDIR"
 pushd "$GITDIR" > /dev/null
 DOTREPO="dotfiles"
-git clone "https://github.com/ianferguson/$DOTREPO.git"
+git clone "git@github.com:ianferguson/$DOTREPO.git"
 pushd "$DOTREPO" > /dev/null
 
 #### install brew bundles ####
