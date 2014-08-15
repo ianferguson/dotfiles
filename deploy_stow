@@ -1,0 +1,13 @@
+#!/bin/bash
+set -u
+set -e
+set -o pipefail
+
+echo "stowing stow files"
+stow --ignore ".DS_Store" -t ~ stow
+
+STOWAWAYS=(fish git psql tmux htop bash_osx mongo ssh vim)
+for STOWAWAY in ${STOWAWAYS[@]}; do
+    echo "stowing $STOWAWAY"
+    stow -R --adopt -t ~ $STOWAWAY
+done;
