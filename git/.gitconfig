@@ -54,6 +54,8 @@
   co = checkout
   cb = checkout -b
   cp = cherry-pick
+  cpa = cherry-pick --abort
+  cpc = cherry-pick --continue
   d = diff -w
   dw = diff --word-diff -w
   fa = fetch --all --tags
