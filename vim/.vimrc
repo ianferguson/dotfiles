@@ -14,6 +14,8 @@ filetype on
 filetype plugin on
 syntax on
 
+autocmd vimenter * NERDTree
+
 if &shell =~# 'fish$'
         set shell=sh
 endif
