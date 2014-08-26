@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>jdfwarrior.chromebookmarks</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>177BDBBC-21CD-42BA-BE48-8A1D62FB7814</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D2E56B86-DFEC-4371-ADA8-0538E5D491AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>David Ferguson</string>
+	<key>description</key>
+	<string>Search Google Chrome Bookmarks</string>
+	<key>name</key>
+	<string>Chrome Bookmarks</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>ch</string>
+				<key>script</key>
+				<string>php -f bookmarks.php -- "{query}"</string>
+				<key>subtext</key>
+				<string>Search Google Chrome Bookmarks</string>
+				<key>title</key>
+				<string>Chrome Bookmarks</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>177BDBBC-21CD-42BA-BE48-8A1D62FB7814</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>open -a "/Applications/Google Chrome.app" "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D2E56B86-DFEC-4371-ADA8-0538E5D491AA</string>
+		</dict>
+	</array>
+	<key>uidata</key>
+	<dict>
+		<key>177BDBBC-21CD-42BA-BE48-8A1D62FB7814</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>D2E56B86-DFEC-4371-ADA8-0538E5D491AA</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>jdfwarrior.tumblr.com</string>
+</dict>
+</plist>
