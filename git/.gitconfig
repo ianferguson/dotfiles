@@ -48,6 +48,7 @@
   b = branch
   ba = branch -a
   bd = branch -d
+  bm = branch --merged
   c = commit
   cm = commit -m
   cma = commit --amend
