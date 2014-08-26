@@ -1,3 +1,4 @@
+set nocompatible
 call pathogen#incubate()
 call pathogen#helptags()
 execute pathogen#infect()
@@ -16,6 +17,7 @@ syntax on
 
 autocmd vimenter * NERDTree
 
-if &shell =~# 'fish$'
-        set shell=sh
-endif
+" vim has supported fish shell since v7.4-256
+" if &shell =~# 'fish$'
+"        set shell=sh
+" endif
