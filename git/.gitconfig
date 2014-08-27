@@ -76,6 +76,7 @@
   s = status .
   sg = status
   sm = submodule
+  sma = submodule add
   smi = submodule init
   smu  = submodule update
   st = stash

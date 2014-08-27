@@ -7,7 +7,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
-
 set number
 
 filetype indent on
@@ -15,9 +14,11 @@ filetype on
 filetype plugin on
 syntax on
 
+" open NERDTree by default, switch cursor back to
+" the non-nerd tree pane, and close when nerdtree is the only
+" buffer left open
 autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd w
-
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
 " taken from http://stackoverflow.com/a/5403847
@@ -32,6 +33,9 @@ function! s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
+
+" disable vim-json's double quote hiding #TooMuchMagic
+let g:vim_json_syntax_conceal = 0
 
 " vim has supported fish shell since v7.4-256
 " if &shell =~# 'fish$'
