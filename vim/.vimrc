@@ -42,6 +42,9 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 " default to just file name matching, not path for ctrp
 let g:ctrlp_by_filename = 1
 
+" ignore angular directives/attributes when linting
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
 " vim has supported fish shell since v7.4-256
 " if &shell =~# 'fish$'
 "        set shell=sh
