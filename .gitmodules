@@ -19,9 +19,6 @@
 [submodule "vim/.vim/bundle/jslint.vim"]
 	path = vim/.vim/bundle/jslint.vim
 	url = https://github.com/hallettj/jslint.vim.git
-[submodule "vim/.vim/bundle/gundo.vim"]
-	path = vim/.vim/bundle/gundo.vim
-	url = http://github.com/sjl/gundo.vim.git
 [submodule "vim/.vim/bundle/vim-surround"]
 	path = vim/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
