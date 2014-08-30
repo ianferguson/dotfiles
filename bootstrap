@@ -64,6 +64,9 @@ for STOWAWAY in ${STOWAWAYS[@]}; do
     stow -R --adopt -t ~ $STOWAWAY
 done;
 
+#tomcat settings
+stow -R --adopt -t $CATALINA_HOME tomcat
+
 popd > /dev/null
 popd > /dev/null
 popd > /dev/null
