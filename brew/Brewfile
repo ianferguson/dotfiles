@@ -44,7 +44,6 @@ install openconnect
 install gist
 install ack
 install brew-pip
-install darcs
 install dterm
 install emacs
 install fontconfig
@@ -58,15 +57,10 @@ install mercurial
 install nmap
 install node
 install parallel
-install pkg-config
-#install psutils
 install pwgen
 install readline
-#install rxvt-unicode
-install sqlite
 install ssh-copy-id
 install stow
-install tig
 
 pin tomcat
 pin postgresql
