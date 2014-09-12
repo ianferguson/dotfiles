@@ -66,6 +66,7 @@ done;
 
 #tomcat settings
 stow -R --adopt -t $CATALINA_HOME tomcat
+"$JAVA_HOME/bin/keytool"  -genkey -alias tomcat -keyalg RSA
 
 popd > /dev/null
 popd > /dev/null
