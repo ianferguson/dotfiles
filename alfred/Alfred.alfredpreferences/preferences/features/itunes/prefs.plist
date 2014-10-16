@@ -4,5 +4,14 @@
 <dict>
 	<key>hideStore</key>
 	<true/>
+	<key>hotkey</key>
+	<dict>
+		<key>key</key>
+		<integer>124</integer>
+		<key>mod</key>
+		<integer>11272192</integer>
+		<key>string</key>
+		<string>→</string>
+	</dict>
 </dict>
 </plist>
