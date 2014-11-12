@@ -31,6 +31,7 @@ install tomcat
 install gradle
 install maven
 install postgresql
+install awscli
 
 #langs
 install go
