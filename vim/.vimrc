@@ -14,25 +14,6 @@ filetype on
 filetype plugin on
 syntax on
 
-" open NERDTree by default, switch cursor back to the non-nerd tree pane
-" commented out when I switched to ctrlp for file nav
-"autocmd vimenter * NERDTree
-"autocmd VimEnter * wincmd w
-
-" taken from http://stackoverflow.com/a/5403847
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-function! s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
-
 " disable vim-json's double quote hiding #TooMuchMagic
 let g:vim_json_syntax_conceal = 0
 
@@ -49,3 +30,12 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 " if &shell =~# 'fish$'
 "        set shell=sh
 " endif
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
