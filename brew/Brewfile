@@ -20,19 +20,19 @@ install wdiff --with-gettext
 install wget
 
 #key dev tools
+install awscli
 install bash
 install bash-completion
+install ctags
+install curl
 install fish
 install git
-install tmux
-install curl
-install httpie
-install tomcat
 install gradle
+install httpie
 install maven
 install postgresql
-install awscli
-install ctags
+install tomcat
+install tmux
 
 #langs
 install go
@@ -42,7 +42,6 @@ install ruby
 install python
 
 #other assorted things
-install openconnect
 install gist
 install ack
 install brew-pip
@@ -50,6 +49,7 @@ install dterm
 install emacs
 install fontconfig
 install freetype
+install fswatch
 install gnupg
 install gpgme
 install heroku-toolbelt
@@ -58,6 +58,7 @@ install jsonpp
 install mercurial
 install nmap
 install node
+install openconnect
 install parallel
 install pwgen
 install readline
