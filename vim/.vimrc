@@ -1,3 +1,5 @@
+" vimrc cobbled together from several sources/random additions, with copypasta
+" bits cited by url.
 set nocompatible
 call pathogen#incubate()
 call pathogen#helptags()
@@ -26,19 +28,51 @@ let g:ctrlp_by_filename = 1
 " ignore angular directives/attributes when linting
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
-" vim has supported fish shell since v7.4-256
+" vim has supported fish shell since v7.4-256, and sensible already does this
+" for us anyways
 " if &shell =~# 'fish$'
 "        set shell=sh
 " endif
 
-" Syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" statusline settings
+" somewhat taken from http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
+" another good resource: http://learnvimscriptthehardway.stevelosh.com/chapters/17.html
+" TODO use () to group item groups and set min.max widths better
 
+" left side:
+set statusline=                               " clear statusline
+set statusline+=%m                            " modified flag
+set statusline+=%y                            " filetype
+set statusline+=\                             " padding from filetype to name
+" set statusline+=%f                          " full filename, if desired
+set statusline+=%t                            " tail of the filename
+
+" middle break
+set statusline+=%=                            " left/right alignment separator
+
+" right side:
+set statusline+=%#warningmsg#                 " name following highlight group
+set statusline+=%{SyntasticStatuslineFlag()}  " include syntastic status flag/highlighting
+set statusline+=%*                            " pop back to standard highlighting
+set statusline+=[%02n]                        " buffer number
+set statusline+=[                             " open buffer pos/size bracket
+set statusline+=%c,                           " cursor column
+set statusline+=%l                            " cursor line
+set statusline+=]                             " close buffer pos/size bracket
+" set statusline+=/%L                          " total lines
+" set statusline+=\ %P                         " percent through file
+set statusline+=\                             " padding from right
+
+" status colors:
+" bold statuslines, do not invert them (which is the default)
+hi StatusLine term=bold cterm=bold gui=bold
+hi clear StatusLineNC
+hi StatusLineNC ctermfg=Grey guifg=Grey
+" end of status line settings
+
+" syntastic settings:
 let g:syntastic_always_populate_loc_list = 1
-" hide location list TODO: only hide it for go, to avoid conflicts with vim-go
-let g:syntastic_auto_loc_list = 0
+let g:syntastic_auto_loc_list = 0 " hide location list TODO: only hide it for go, to avoid conflicts with vim-go
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
@@ -62,4 +96,3 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>s <Plug>(go-implements)
 
 let g:go_fmt_command = "goimports"
-
