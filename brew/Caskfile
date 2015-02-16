@@ -52,6 +52,9 @@ cask install qlmarkdown
 cask install qlprettypatch
 cask install betterzipql
 
+# fonts
+cask install font-inconsolata
+
 # link in casks to alfred
 cask alfred link
 
