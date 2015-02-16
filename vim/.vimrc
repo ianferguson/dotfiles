@@ -72,9 +72,10 @@ hi StatusLineNC ctermfg=Grey guifg=Grey
 
 " syntastic settings:
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0 " hide location list TODO: only hide it for go, to avoid conflicts with vim-go
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
 
 " vim-go settings/mappings
 au FileType go nmap <leader>r <Plug>(go-run)
