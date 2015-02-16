@@ -97,3 +97,6 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>s <Plug>(go-implements)
 
 let g:go_fmt_command = "goimports"
+" fail gofmt silently in vim-go, since syntastic should be highlighting
+" already for us
+let g:go_fmt_fail_silently = 0
