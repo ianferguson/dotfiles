@@ -6,6 +6,7 @@ call pathogen#helptags()
 execute pathogen#infect()
 
 set tabstop=2
+set cmdheight=2
 set shiftwidth=2
 set expandtab
 set autoindent
@@ -41,10 +42,10 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " left side:
 set statusline=                               " clear statusline
-set statusline+=%m                            " modified flag
 set statusline+=%y                            " filetype
 set statusline+=\                             " padding from filetype to name
 " set statusline+=%f                          " full filename, if desired
+set statusline+=%m                            " modified flag
 set statusline+=%t                            " tail of the filename
 
 " middle break
@@ -65,9 +66,9 @@ set statusline+=\                             " padding from right
 
 " status colors:
 " bold statuslines, do not invert them (which is the default)
-hi StatusLine term=bold cterm=bold gui=bold
+hi StatusLine term=bold cterm=bold ctermbg=235 ctermfg=cyan
 hi clear StatusLineNC
-hi StatusLineNC ctermfg=Grey guifg=Grey
+hi StatusLineNC ctermfg=245 ctermbg=235
 " end of status line settings
 
 " syntastic settings:
