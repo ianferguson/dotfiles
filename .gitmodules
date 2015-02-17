@@ -25,3 +25,6 @@
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/vim-bufferline"]
+	path = vim/.vim/bundle/vim-bufferline
+	url = https://github.com/bling/vim-bufferline
