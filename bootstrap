@@ -49,8 +49,7 @@ pushd "$DOTREPO" > /dev/null
 #### install brew bundles ####
 if [ "osx" = "$OS" ]; then
     pushd brew > /dev/null
-    brew bundle Brewfile
-    brew bundle Caskfile
+    ./starter
     brew doctor || true
     popd > /dev/null
 fi;
