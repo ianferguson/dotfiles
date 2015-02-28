@@ -35,7 +35,7 @@ let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 "        set shell=sh
 " endif
 
-" statusline settings
+"" statusline settings
 " somewhat taken from http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
 " another good resource: http://learnvimscriptthehardway.stevelosh.com/chapters/17.html
 " TODO use () to group item groups and set min.max widths better
@@ -69,16 +69,16 @@ set statusline+=\                             " padding from right
 hi StatusLine term=bold cterm=bold ctermbg=235 ctermfg=cyan
 hi clear StatusLineNC
 hi StatusLineNC ctermfg=245 ctermbg=235
-" end of status line settings
+"" end of status line settings
 
-" syntastic settings:
+"" syntastic settings:
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
 
-" vim-go settings/mappings
+"" vim-go settings/mappings
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
@@ -97,10 +97,14 @@ au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>s <Plug>(go-implements)
 
-let g:go_fmt_command = "goimports"
-" fail gofmt silently in vim-go, since syntastic should be highlighting
-" already for us
+" fail gofmt silently in vim-go, since syntastic should be highlighting already for us
 let g:go_fmt_fail_silently = 0
+let g:go_fmt_command = "goimports"
 
+"" SQL setup
 " push things to default to using pg sql formatting
 let g:sql_type_default = 'pgsql'
+
+" dbext profiles
+" let g:dbext_default_type = 'PGSQL'
+let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
