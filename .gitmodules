@@ -25,3 +25,12 @@
 [submodule "vim/.vim/bundle/tagbar"]
 	path = vim/.vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "vim/.vim/bundle/vim-gitgutter"]
+	path = vim/.vim/bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/.vim/bundle/dbext.vim"]
+	path = vim/.vim/bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim
+[submodule "vim/.vim/bundle/pgsql.vim"]
+	path = vim/.vim/bundle/pgsql.vim
+	url = https://github.com/exu/pgsql.vim

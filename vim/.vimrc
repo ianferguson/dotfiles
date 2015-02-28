@@ -101,3 +101,6 @@ let g:go_fmt_command = "goimports"
 " fail gofmt silently in vim-go, since syntastic should be highlighting
 " already for us
 let g:go_fmt_fail_silently = 0
+
+" push things to default to using pg sql formatting
+let g:sql_type_default = 'pgsql'
