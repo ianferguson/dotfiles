@@ -1,29 +1,11 @@
 #!/bin/bash
+# assuming stow is already installed re run stow over a know/fixed list of stow packages
 set -u
 set -e
 set -o pipefail
 
-#### OS X or Linux? ####
-UNAME=$(uname -s)
-OS="unknown"
-echo "proceeding with hassling stowaways for $UNAME"
-
-if [ "Linux" = "$UNAME" ]; then
-    #### install git and stow for linux ####
-    sudo apt-get install stow git -y;
-    OS="linux"
-elif [ "Darwin" = "$UNAME" ]; then
-    #### install dev tools, Homebrew and git ####
-    xcode-select --install
-    read -p "press return when xcode cli tools install is complete to continue"
-    curl -fsSL "https://raw.github.com/Homebrew/homebrew/go/install" > "/tmp/install_brew.rb"
-    ruby "/tmp/install_brew.rb"
-    rm "/tmp/install_brew.rb"
-    OS="osx"
-else
-    "Don't know what to do with stowaways with a uname of $UNAME"
-    exit 1;
-fi
+# check for stow, will have > 0 exist status if it isn't here, and set -e will cause exit
+stow -V
 
 echo "stowing stow files"
 stow --ignore ".DS_Store" -t ~ stow
