@@ -29,3 +29,7 @@ KEY_TARGET="$HOME/Library/KeyBindings"
 echo "stowing key bindings to $KEY_TARGET to make home/end work as expected"
 mkdir -p "$KEY_TARGET"
 stow $FLAGS --adopt -t "$KEY_TARGET" osx_keys
+
+# is therere a smarter way to find where to drop the pg files?
+# this will work as long as homebrew is managing the install but no guaruntee otherwise
+stow $FLAGS --adopt -t /usr/local/var/postgres postgres
