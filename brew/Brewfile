@@ -19,6 +19,7 @@ install htop-osx
 install watch
 install wdiff --with-gettext
 install wget
+install plan9port
 
 #key dev tools
 install awscli
@@ -32,6 +33,7 @@ install gradle
 install httpie
 install maven
 install postgresql
+install pgcli
 install shellcheck
 install tomcat
 install tmux
