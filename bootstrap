@@ -66,7 +66,7 @@ for STOWAWAY in ${STOWAWAYS[@]}; do
 done;
 
 #tomcat settings
-stow -R --adopt -t $CATALINA_HOME tomcat
+stow -R --adopt -t "$CATALINA_HOME" tomcat
 "$JAVA_HOME/bin/keytool"  -genkey -alias tomcat -keyalg RSA
 
 popd > /dev/null
