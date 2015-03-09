@@ -1,10 +1,18 @@
 #!/usr/local/bin/fish
 # should be run once to set initial universal env vars on a new install, after tool installation is complete
 
-set -Ux PAGER vimpager
-set -Ux GOROOT (go env GOROOT)
 set -Ux fish_greeting "Good morning sunshine"
+
+# Default editor, etc
+set -Ux PAGER vimpager
+set -Ux VISUAL vim
+set -Ux EDITOR vim -e
+
+# Go Pathes
+set -Ux GOROOT (go env GOROOT)
 set -Ux GOPATH ~/golang
+
+#### Java Pathing
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
 set -Ux JAVA_HOME (/usr/libexec/java_home)
 # CATALINA_HOME is a little dodgy, but given that this script should only really run
