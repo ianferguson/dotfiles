@@ -54,25 +54,15 @@ if [ "osx" = "$OS" ]; then
     popd > /dev/null
 fi;
 
-####
-
-#### Stow Stuff ####
-#first stow a stow ignore, so we avoid any DS_Store stuff forever
-echo "stowing stow files"
-stow --ignore ".DS_Store" -t ~ stow
-
-STOWAWAYS=(fish git psql tmux htop bash_$OS mongo ssh vim)
-for STOWAWAY in ${STOWAWAYS[@]}; do
-    echo "stowing $STOWAWAY"
-    stow -R --adopt -t ~ $STOWAWAY
-done;
-
-#tomcat settings
-stow -R --adopt -t "$CATALINA_HOME" tomcat
-"$JAVA_HOME/bin/keytool"  -genkey -alias tomcat -keyalg RSA
-
 #### pick up default fish universal env settings
 fish universal_fish_vars
+
+#### Deploy Stow Stuff ####
+./deploy_stow
+
+#### init local tomcat key store
+echo "setting up local keystore"
+"$JAVA_HOME/bin/keytool"  -genkey -alias tomcat -keyalg RSA
 
 popd > /dev/null
 popd > /dev/null
