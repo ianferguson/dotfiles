@@ -7,4 +7,7 @@ set -Ux fish_greeting "Good morning sunshine"
 set -Ux GOPATH ~/golang
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
 set -Ux JAVA_HOME (/usr/libexec/java_home)
-set -Ux CATALINA_HOME /usr/local/Cellar/tomcat/8.0.9/libexec
+# CATALINA_HOME is a little dodgy, but given that this script should only really run
+# right after install, and all of my brew update scripts are hyper vigilant about
+# running brew clean, there should only ever be a single tomcat version installed
+set -Ux CATALINA_HOME /usr/local/Cellar/tomcat/*/libexec
