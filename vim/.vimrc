@@ -69,6 +69,8 @@ set statusline+=\                             " padding from right
 hi StatusLine term=bold cterm=bold ctermbg=235 ctermfg=cyan
 hi clear StatusLineNC
 hi StatusLineNC ctermfg=245 ctermbg=235
+" clear sign column formatting so it matches up with the line number column
+hi clear SignColumn
 "" end of status line settings
 
 "" syntastic settings:
