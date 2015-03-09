@@ -1,9 +1,7 @@
 #!/bin/bash
-# assuming stow is already installed re run stow over a know/fixed list of stow packages
-# note: if the target dirs for any of the packages already contain files in them you will get an
-# an error since it's not possible to unstow and stow to them (-R), but this script assumes
-# that everything was already run through the initial set up script and as such, already adopted
-# and stowed. (this most specifically applies to tomcat)
+# Stow packages from within this repo out to target destinations,
+# passing any arguments to this script straight through to stow
+# (right after stow and before a (default) --adopt)
 set -u
 set -e
 set -o pipefail
@@ -14,14 +12,15 @@ stow -V
 echo "stowing stow files"
 stow --ignore ".DS_Store" -t ~ stow
 
+FLAGS="$*"
 STOWAWAYS=(fish git psql tmux htop mongo ssh vim)
 for STOWAWAY in ${STOWAWAYS[@]}; do
     echo "stowing $STOWAWAY"
-    stow -R --adopt -t ~ $STOWAWAY
+    stow $FLAGS --adopt -t ~ $STOWAWAY
 done;
 
 echo "stowing tomcat to $CATALINA_HOME"
-stow -R --adopt -t "$CATALINA_HOME" tomcat
+stow $FLAGS --adopt -t "$CATALINA_HOME" tomcat
 
 # No longer full OS agnostic, but I also don't actually use these scripts
 # much on Linux, and when that time comes I'll just fix this along with the other 
@@ -29,4 +28,4 @@ stow -R --adopt -t "$CATALINA_HOME" tomcat
 KEY_TARGET="$HOME/Library/KeyBindings"
 echo "stowing key bindings to $KEY_TARGET to make home/end work as expected"
 mkdir -p "$KEY_TARGET"
-stow -R --adopt -t "$KEY_TARGET" osx_keys
+stow $FLAGS --adopt -t "$KEY_TARGET" osx_keys
