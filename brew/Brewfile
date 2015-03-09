@@ -3,14 +3,11 @@ tap caskroom/fonts
 
 update
 
-#setup gnu utils in place of os x provided enes
+# setup gnu utils in place of os x provided enes
 install vim --override-system-vi
 install vimpager
-install coreutils
-install binutils
 install findutils --default-names
 install gawk
-install gnu-indent --default-names
 install gnu-sed --default-names
 install gnu-tar --default-names
 install gnu-which --default-names
@@ -19,7 +16,6 @@ install htop-osx
 install watch
 install wdiff --with-gettext
 install wget
-install plan9port
 
 #key dev tools
 install awscli
@@ -30,33 +26,29 @@ install curl
 install fish
 install git
 install gradle
-install httpie
 install maven
 install postgresql
-install pgcli
-install shellcheck
 install tomcat
 install tmux
 
-#langs
+# langs
 install go
 install groovy
 install lua
 install ruby
 install python
 
-#other assorted things
-install gist
-install ack
+# other assorted things
 install brew-pip
 install dterm
 install emacs
 install fontconfig
 install freetype
 install fswatch
+install gist
 install gnupg
 install gpgme
-install heroku-toolbelt
+install httpie
 install jpeg
 install jsonpp
 install mercurial
@@ -64,7 +56,8 @@ install nmap
 install node
 install openconnect
 install parallel
-install pwgen
+# install from source to avoid accidentaly upgrading pg, if pg version number has been pinned
+install --build-from-source pgcli
 install readline
 install ssh-copy-id
 install stow

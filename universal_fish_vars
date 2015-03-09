@@ -1,0 +1,10 @@
+#!/bin/fish
+# should be run once to set initial universal env vars on a new install, after tool installation is complete
+
+set -Ux PAGER vimpager
+set -Ux GOROOT (go env GOROOT)
+set -Ux fish_greeting "Good morning sunshine"
+set -Ux GOPATH ~/golang
+set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
+set -Ux JAVA_HOME (/usr/libexec/java_home)
+set -Ux CATALINA_HOME /usr/local/Cellar/tomcat/8.0.9/libexec

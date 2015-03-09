@@ -54,6 +54,8 @@ if [ "osx" = "$OS" ]; then
     popd > /dev/null
 fi;
 
+####
+
 #### Stow Stuff ####
 #first stow a stow ignore, so we avoid any DS_Store stuff forever
 echo "stowing stow files"
@@ -68,6 +70,9 @@ done;
 #tomcat settings
 stow -R --adopt -t "$CATALINA_HOME" tomcat
 "$JAVA_HOME/bin/keytool"  -genkey -alias tomcat -keyalg RSA
+
+#### pick up default fish universal env settings
+fish universal_fish_vars
 
 popd > /dev/null
 popd > /dev/null
