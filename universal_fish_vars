@@ -1,4 +1,4 @@
-#!/bin/fish
+#!/usr/local/bin/fish
 # should be run once to set initial universal env vars on a new install, after tool installation is complete
 
 set -Ux PAGER vimpager

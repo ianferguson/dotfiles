@@ -1,5 +1,9 @@
 #!/bin/bash
 # assuming stow is already installed re run stow over a know/fixed list of stow packages
+# note: if the target dirs for any of the packages already contain files in them you will get an
+# an error since it's not possible to unstow and stow to them (-R), but this script assumes
+# that everything was already run through the initial set up script and as such, already adopted
+# and stowed. (this most specifically applies to tomcat)
 set -u
 set -e
 set -o pipefail
@@ -16,3 +20,5 @@ for STOWAWAY in ${STOWAWAYS[@]}; do
     stow -R --adopt -t ~ $STOWAWAY
 done;
 
+echo "stowing tomcat to $CATALINA_HOME"
+stow -R --adopt -t "$CATALINA_HOME" tomcat
