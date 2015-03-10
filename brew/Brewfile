@@ -27,9 +27,15 @@ install fish
 install git
 install gradle
 install maven
-install postgresql
 install tomcat
 install tmux
+
+# postgres related
+install postgresql
+install pgbadger 
+install pg_top 
+install postgis 
+install pgformatter
 
 # langs
 install go
