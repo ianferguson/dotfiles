@@ -26,7 +26,7 @@
   renamelimit = 0
   # comment out patience for a bit, eclipse git integration is breaking on it =/
   # algorithm = patience
-  tool = vimdiff
+	tool = vimdiff
   prompt = false
 
 [color]
@@ -85,3 +85,7 @@
   tree =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
   treed =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all --date-order
 
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
