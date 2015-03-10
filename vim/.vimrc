@@ -79,6 +79,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
+let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 
 "" vim-go settings/mappings
 au FileType go nmap <leader>r <Plug>(go-run)
@@ -113,6 +114,3 @@ let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
 
 " force Tagbar open for some files
 autocmd BufNewFile,BufRead *.go,*.java :TagbarOpen
-
-" TODO properly run gotags as appropriate
-" autocmd BufWrite,BufRead *.go !gotags -R .
