@@ -110,3 +110,9 @@ let g:sql_type_default = 'pgsql'
 " dbext profiles
 " let g:dbext_default_type = 'PGSQL'
 let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
+
+" force Tagbar open for some files
+autocmd BufNewFile,BufRead *.go,*.java :TagbarOpen
+
+" TODO properly run gotags as appropriate
+" autocmd BufWrite,BufRead *.go !gotags -R .

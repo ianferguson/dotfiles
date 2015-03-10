@@ -13,7 +13,7 @@ echo "stowing stow files"
 stow --ignore ".DS_Store" -t ~ stow
 
 FLAGS="$*"
-STOWAWAYS=(fish git psql tmux htop mongo ssh vim)
+STOWAWAYS=(fish git psql tmux htop mongo ssh vim ctags)
 for STOWAWAY in ${STOWAWAYS[@]}; do
     echo "stowing $STOWAWAY"
     stow $FLAGS --adopt -t ~ $STOWAWAY

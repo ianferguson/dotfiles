@@ -34,3 +34,9 @@
 [submodule "vim/.vim/bundle/pgsql.vim"]
 	path = vim/.vim/bundle/pgsql.vim
 	url = https://github.com/exu/pgsql.vim
+[submodule "vim/.vim/bundle/vim-easytags"]
+	path = vim/.vim/bundle/vim-easytags
+	url = git@github.com:xolox/vim-easytags.git
+[submodule "vim/.vim/bundle/vim-misc"]
+	path = vim/.vim/bundle/vim-misc
+	url = git@github.com:xolox/vim-misc.git

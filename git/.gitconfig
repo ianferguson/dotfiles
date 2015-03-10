@@ -4,7 +4,7 @@
   signingkey = F02FD45B
 
 [core]
-  pager=less -+$LESS -FRX
+	pager = less
   autocrlf = input
   #named non-standardly to avoid mixing
   #my dotfiles repo .gitignore with the .gitignore for global
