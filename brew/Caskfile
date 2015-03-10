@@ -9,6 +9,7 @@ cask install java
 cask install caskroom/versions/java6
 cask install caskroom/versions/java7
 cask install eclipse-java
+cask install intellij
 cask install visualvm
 
 # comms tools
@@ -16,12 +17,12 @@ cask install adium
 cask install colloquy
 cask install hipchat
 cask install slack
-cask install skype
 
 # assorted dev tools
+cask install cyberduck
 cask install iterm2
+cask install mysqlworkbench
 cask install pgadmin3
-cask install soqlxplorer
 cask install sourcetree
 cask install textwrangler
 cask install wireshark
@@ -29,14 +30,12 @@ cask install wireshark
 # app launchers and env managers
 cask install alfred
 cask install bettertouchtool 
-cask install dropletmanager
 cask install gpgtools
-cask install launchcontrol
-cask install launchrocket
 cask install switchresx
 
 # assorted other things
 cask install google-chrome
+cask install grandperspective
 cask install keka
 cask install lastfm
 
