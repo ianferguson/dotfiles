@@ -38,6 +38,7 @@ cask install google-chrome
 cask install grandperspective
 cask install keka
 cask install lastfm
+cask install little-snitch
 
 # VMs and images
 cask install vagrant
