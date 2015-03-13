@@ -34,6 +34,7 @@ cask install gpgtools
 cask install switchresx
 
 # assorted other things
+cask install cloak
 cask install google-chrome
 cask install grandperspective
 cask install keka
