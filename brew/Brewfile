@@ -58,6 +58,7 @@ install httpie
 install jpeg
 install jsonpp
 install mercurial
+install netcat
 install nmap
 install node
 install openconnect
