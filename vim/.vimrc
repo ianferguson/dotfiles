@@ -117,15 +117,3 @@ let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
 
 " force Tagbar open for some files
 autocmd BufNewFile,BufRead *.go,*.java :TagbarOpen
-
-" disable arrow keys, attempt to force myself into using hjkl
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
-" allow arrows in normal mode for now, at least until I stop trying
-" to do navigation actions in insert mode
-" noremap   <Up>     <NOP>
-" noremap   <Down>   <NOP>
-" noremap   <Left>   <NOP>
-" noremap   <Right>  <NOP>

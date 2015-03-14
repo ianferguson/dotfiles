@@ -44,3 +44,6 @@
 [submodule "vim/.vim/bundle/vim-toml"]
 	path = vim/.vim/bundle/vim-toml
 	url = git@github.com:cespare/vim-toml.git
+[submodule "vim/.vim/bundle/dogmatic.vim"]
+	path = vim/.vim/bundle/dogmatic.vim
+	url = git@github.com:mrmargolis/dogmatic.vim.git
