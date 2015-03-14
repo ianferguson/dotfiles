@@ -1,6 +1,5 @@
 function freshie
 	brew update
-  and brew upgrade brew-cask
   and brew upgrade $argv
   and brew cask cleanup
   and brew cleanup
