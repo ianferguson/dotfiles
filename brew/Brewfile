@@ -55,6 +55,7 @@ install gist
 install gnupg
 install gpgme
 install httpie
+install irssi
 install jpeg
 install jsonpp
 install mercurial
