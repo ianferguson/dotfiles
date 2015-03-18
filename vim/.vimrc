@@ -115,17 +115,3 @@ let g:sql_type_default = 'pgsql'
 " dbext profiles
 " let g:dbext_default_type = 'PGSQL'
 let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
-
-" force Tagbar open for some files
-aug tagbaropen
-  au!
-  autocmd BufNewFile,BufRead *.go,*.java :TagbarOpen
-aug END
-
-" warn on overly long lines for certain files types
-aug highlight-longlines
-  au!
-  au BufNewFile,BufRead * highlight clear OverLength
-  au BufNewFile,BufRead *.go,*.java,*.sh,*.sql highlight OverLength ctermfg=red guibg=#592929
-  au BufNewFile,BufRead *.go,*.java,*.sh,*.sql match OverLength /\%121v.\+/
-aug END
