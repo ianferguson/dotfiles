@@ -12,6 +12,8 @@
 # Make sure we are not already in a tmux session
 if [[ -z "$TMUX" ]]; then
   base_session="uber"
+  # ensure there is an uber session
+  tmux has -t "$base_session" || tmux new-session -s "$base_session"
 
   # Kill defunct sessions first
   old_sessions=$(tmux ls 2>/dev/null | egrep "^[0-9]{14}.*[0-9]+\)$" | cut -f 1 -d:)
