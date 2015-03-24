@@ -9,7 +9,7 @@ cask install java
 cask install caskroom/versions/java6
 cask install caskroom/versions/java7
 cask install eclipse-java
-cask install intellij
+cask install intellij-ide-ce
 cask install visualvm
 
 # comms tools
