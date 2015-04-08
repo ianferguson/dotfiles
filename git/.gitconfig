@@ -1,5 +1,5 @@
 [user]
-  name = ian ferguson
+  name = Ian Ferguson
   email = ian@ianferguson.io
   signingkey = F02FD45B
 
@@ -47,11 +47,12 @@
   aa = add .
   ap = add -p .
   b = branch
-  ba = branch -a
   bd = branch -d
   c = commit
   cm = commit -m
   cma = commit --amend
+  cmf = commit --fixup
+  cmff = commit --fixup HEAD
   co = checkout
   cb = checkout -b
   cp = cherry-pick
@@ -61,7 +62,6 @@
   dw = diff --word-diff -w
   fa = fetch --all --tags
   lo = log --oneline
-  lsr = ls-remote
   mf = merge --ff-only
   pt = push --tags
   r = reset
