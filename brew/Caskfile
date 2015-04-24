@@ -53,6 +53,9 @@ cask install qlmarkdown
 cask install qlprettypatch
 cask install betterzipql
 
+# because I like to map my caps lock => esc
+cask install seil
+
 # fonts
 cask install font-inconsolata
 
