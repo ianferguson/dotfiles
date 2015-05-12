@@ -14,20 +14,21 @@ OS="unknown"
 echo "proceeding with hassling stowaways for $UNAME"
 
 if [ "Linux" = "$UNAME" ]; then
-    #### install git and stow for linux ####
-    sudo apt-get install stow git -y;
-    OS="linux"
+  # Assumes linux is always an apt based system
+  #### install git and stow for linux ####
+  sudo apt-get install stow git -y;
+  OS="linux"
 elif [ "Darwin" = "$UNAME" ]; then
-    #### install dev tools, Homebrew and git ####
-    xcode-select --install
-    read -p "press return when xcode cli tools install is complete to continue"
-    curl -fsSL "https://raw.github.com/Homebrew/homebrew/go/install" > "/tmp/install_brew.rb"
-    ruby "/tmp/install_brew.rb"
-    rm "/tmp/install_brew.rb"
-    OS="osx"
+  #### install dev tools, Homebrew and git ####
+  xcode-select --install
+  read -p "press return when xcode cli tools install is complete to continue"
+  curl -fsSL "https://raw.github.com/Homebrew/homebrew/go/install" > "/tmp/install_brew.rb"
+  ruby "/tmp/install_brew.rb"
+  rm "/tmp/install_brew.rb"
+  OS="osx"
 else
-    "Don't know what to do with stowaways with a uname of $UNAME"
-    exit 1;
+  "Don't know what to do with stowaways with a uname of $UNAME"
+  exit 1;
 fi
 
 
@@ -48,10 +49,14 @@ pushd "$DOTREPO" > /dev/null
 
 #### install brew bundles ####
 if [ "osx" = "$OS" ]; then
-    pushd brew > /dev/null
-    ./starter
-    brew doctor || true
-    popd > /dev/null
+  pushd brew > /dev/null
+  ./starter
+  brew doctor || true
+  popd > /dev/null
+else
+  pushd apt > /dev/null
+  ./starter
+  popd >/dev/null
 fi;
 
 #### pick up default fish universal env settings

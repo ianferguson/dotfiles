@@ -1,0 +1,30 @@
+#!/bin/bash
+# crude replcaement script for running Brewfiles written when brew bundle was
+# still supported (and even recommended over writing your own shell script!)
+# by the homebrew devs
+set -e
+set -o pipefail
+
+pushd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null
+
+echo "updating apt indexes"
+sudo apt-get update
+
+# This portion is taken from a brew script I had written, but 
+# in both cases not sure why its not being done with a single apt/brew install
+# command rather than iterating through each line?
+echo "installing std packages"
+cat packages | grep -v "^#" | grep -v '^$' | \
+while read CMD; do
+  echo "doing $CMD"    
+  sudo apt-get install -y $CMD
+done
+
+# probably not going to do anything, but
+sudo apt-get -y upgrade
+
+echo "cleaning up old versions"
+sudo apt-get clean
+
+# TODO properly trap on exit and popd back to where we came from
+popd > /dev/null

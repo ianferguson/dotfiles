@@ -1,0 +1,47 @@
+vim
+vimpager
+findutils
+gawk
+htop
+watch
+wget
+awscli
+bash
+ctags
+curl
+fish
+git
+gradle
+maven
+tomcat
+tmux
+
+# postgres related
+postgresql
+pgbadger 
+pg_top 
+postgis 
+pgformatter
+
+# langs
+go
+groovy
+lua
+ruby
+python
+
+# other assorted things
+fswatch
+gist
+gnupg
+gpgme
+httpie
+jsonpp
+mercurial
+netcat
+nmap
+node
+parallel
+readline
+ssh-copy-id
+stow
