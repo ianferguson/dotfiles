@@ -18,7 +18,7 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/.vim/bundle/bundle/simpledb"]
 	path = vim/.vim/bundle/simpledb
-	url = https://github.com/ivalkeen/vim-simpledb
+	url = https://github.com/ianferguson/vim-simpledb
 [submodule "vim/.vim/bundle/vim-go"]
 	path = vim/.vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
