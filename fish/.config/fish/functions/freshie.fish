@@ -8,6 +8,7 @@ function freshie
   and brew upgrade --all
   and brew cask cleanup
   and brew cleanup
+  and brew linkapps
 
   # in the case that go is updated, the fish env GOROOT will be pointing at
   # the old GOROOT value, which is set mostly for the benefit of godef, godoc
