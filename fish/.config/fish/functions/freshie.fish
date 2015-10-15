@@ -15,5 +15,5 @@ function freshie
   # and a few other tools that whine if its not set in the shell env, so
   # go ahead and ask the go on our path (which will be the homebrew managed one)
   # what its root is and then export that universally to our fish shells
-  set -Ux GOROOT (go env GOROOT)
+  and set -gx GOROOT (go env GOROOT)
 end
