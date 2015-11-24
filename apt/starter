@@ -16,6 +16,7 @@ sudo apt-get update
 echo "installing std packages"
 cat packages | grep -v "^#" | grep -v '^$' | \
 while read CMD; do
+  # TODO: why did I make this run a command per package instead of just a single apt get call?"
   echo "doing $CMD"    
   sudo apt-get install -y $CMD
 done
