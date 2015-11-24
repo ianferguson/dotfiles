@@ -42,16 +42,14 @@ fi
 GITDIR="$HOME/git"
 mkdir -p "$GITDIR"
 pushd "$GITDIR" > /dev/null
-if [ ! -f "$HOME/git/dotfiles" ]; then
+DOTREPO="dotfiles"
+if [ ! -d "$HOME/git/dotfiles" ]; then
   read -p "about to clone dotfiles repo, go ahead and add your new ssh key to github first, press enter when done"
-  DOTREPO="dotfiles"
   git clone "git@github.com:ianferguson/$DOTREPO.git"
-  pushd "$DOTREPO" > /dev/null
-  git submodule init
-  git submodule update
-  popd > /dev/null
 fi
 pushd "$DOTREPO" > /dev/null
+git submodule init
+git submodule update
 
 #### install brew bundles ####
 if [ "osx" = "$OS" ]; then
