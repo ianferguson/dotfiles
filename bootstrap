@@ -33,7 +33,7 @@ fi
 
 
 #### generate new ssh keys ####
-if [ ! -f "~/.ssh/id_rsa"]; then
+if [ ! -f "~/.ssh/id_rsa" ]; then
   ssh-keygen
 fi
 
@@ -42,7 +42,7 @@ fi
 GITDIR="$HOME/git"
 mkdir -p "$GITDIR"
 pushd "$GITDIR" > /dev/null
-if [ ! -f "~/git/dotfiles"]; then
+if [ ! -f "~/git/dotfiles" ]; then
   read -p "about to clone dotfiles repo, go ahead and add your new ssh key to github first, press enter when done"
   DOTREPO="dotfiles"
   git clone "git@github.com:ianferguson/$DOTREPO.git"
