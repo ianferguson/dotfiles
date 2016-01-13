@@ -22,7 +22,7 @@ elif [ "Darwin" = "$UNAME" ]; then
   #### install dev tools, Homebrew and git ####
   xcode-select --install
   read -p "press return when xcode cli tools install is complete to continue"
-  curl -fsSL "https://raw.github.com/Homebrew/homebrew/go/install" > "/tmp/install_brew.rb"
+  curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install" > "/tmp/install_brew.rb"
   ruby "/tmp/install_brew.rb"
   rm "/tmp/install_brew.rb"
   OS="osx"
