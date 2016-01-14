@@ -9,7 +9,7 @@ cask install java
 cask install caskroom/versions/java6
 cask install caskroom/versions/java7
 cask install eclipse-java
-cask install intellij-ide-ce
+cask install intellij-idea-ce
 cask install visualvm
 
 # comms tools
@@ -53,14 +53,12 @@ cask install qlmarkdown
 cask install qlprettypatch
 cask install betterzipql
 
-# because I like to map my caps lock => esc
-cask install seil
-
 # fonts
 cask install font-inconsolata
 
 # link in casks to alfred
-cask alfred link
+# no longer appears to work as of 2016-01-13
+# cask alfred link
 
 # clear out any download caches
 cask cleanup
