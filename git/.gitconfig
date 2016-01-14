@@ -19,7 +19,7 @@
 [push]
   #'git push' will push the current branch to its tracking branch
   #the usual default is to push all branches
-  default = tracking
+	default = current
 
 [diff]
   renames = copy # makes the diff much shorter when moving or copying files
@@ -93,3 +93,5 @@
 	insteadOf = https://github.com/
 [url "”git@bitbucket.org:”"]
 	insteadOf = “https://bitbucket.org/”
+[hub]
+	host = github.va.opower.it
