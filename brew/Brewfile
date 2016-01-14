@@ -6,15 +6,8 @@ update
 # setup gnu utils in place of os x provided enes
 install vim --override-system-vi
 install vimpager
-install findutils --default-names
-install gawk
-install gnu-sed --default-names
-install gnu-tar --default-names
-install gnu-which --default-names
-install gnutls --default-names
 install htop-osx
 install watch
-install wdiff --with-gettext
 install wget
 
 #key dev tools
@@ -52,6 +45,7 @@ install fontconfig
 install freetype
 install fswatch
 install gist
+# was already install on machine and couldnt remember tag to not override existing links
 install gnupg
 install gpgme
 install httpie
