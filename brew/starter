@@ -15,17 +15,17 @@ brew doctor || true
 echo "updating brew indexes"
 brew update
 
-echo "installing brews"
-cat Brewfile | grep -v "^#" | grep -v '^$' | \
-while read CMD; do
-  echo "doing $CMD"    
-  brew $CMD
-done
-
 echo "installing casks"
 cat Caskfile | grep -v "^#" | grep -v '^$' | \
 while read CMD; do
   echo "$CMD"
+  brew $CMD
+done
+
+echo "installing brews"
+cat Brewfile | grep -v "^#" | grep -v '^$' | \
+while read CMD; do
+  echo "doing $CMD"    
   brew $CMD
 done
 
