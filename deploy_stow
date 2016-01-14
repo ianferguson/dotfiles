@@ -19,12 +19,10 @@ for STOWAWAY in ${STOWAWAYS[@]}; do
     stow $FLAGS --adopt -t ~ $STOWAWAY
 done;
 
-echo "stowing tomcat to $CATALINA_HOME"
-stow $FLAGS --adopt -t "$CATALINA_HOME" tomcat
-
 # No longer full OS agnostic, but I also don't actually use these scripts
 # much on Linux, and when that time comes I'll just fix this along with the other 
 # 100 things I'm going to need to tweak
+# TODO, this may not actually work anymore, need to investigate -ian 2016-01-14
 KEY_TARGET="$HOME/Library/KeyBindings"
 echo "stowing key bindings to $KEY_TARGET to make home/end work as expected"
 mkdir -p "$KEY_TARGET"
