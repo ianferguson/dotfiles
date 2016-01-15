@@ -64,6 +64,8 @@ install --build-from-source pgcli
 install readline
 install ssh-copy-id
 install stow
+# reattach-to-user-namespace allows pbcopy/pbpaste and most importantly, launctl, to play nice with tmux
+install reattach-to-user-namespace
 
 pin tomcat
 pin postgresql
