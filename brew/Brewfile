@@ -4,6 +4,7 @@ tap caskroom/fonts
 update
 
 # setup gnu utils in place of os x provided enes
+install gcc
 install vim --override-system-vi
 install vimpager
 install htop-osx
