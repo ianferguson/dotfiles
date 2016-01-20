@@ -58,10 +58,12 @@
   cp = cherry-pick
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
+	ctags = !.git/hooks/ctags
   d = diff -w
   dw = diff --word-diff -w
   fa = fetch --all --tags
   lo = log --oneline
+  ls = ls-files
   mf = merge --ff-only
   pt = push --tags
   r = reset
@@ -96,3 +98,5 @@
 	insteadOf = “https://bitbucket.org/”
 [hub]
 	host = github.va.opower.it
+[init]
+	templatedir = ~/.git_template
