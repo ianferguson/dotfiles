@@ -5,7 +5,7 @@ function fork_clone
   and pushd $repo
   and hub fork
   and git remote rename origin upstream
-  and git remote rename ian.ferguson origin
+  and git remote rename ian-ferguson origin
   # git branch -u origin/master
   popd
 end
