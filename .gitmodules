@@ -68,3 +68,9 @@
 [submodule "vim/.vim/bundle/vim-rhubarb"]
 	path = vim/.vim/bundle/vim-rhubarb
 	url = git@github.com:tpope/vim-rhubarb.git
+[submodule "vim/.vim/bundle/gem-ctags"]
+	path = vim/.vim/bundle/gem-ctags
+	url = git@github.com:tpope/gem-ctags.git
+[submodule "vim/.vim/bundle/vim-rbenv"]
+	path = vim/.vim/bundle/vim-rbenv
+	url = git@github.com:tpope/vim-rbenv.git
