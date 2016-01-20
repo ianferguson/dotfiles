@@ -65,3 +65,6 @@
 [submodule "vim/.vim/bundle/vim-endwise"]
 	path = vim/.vim/bundle/vim-endwise
 	url = git@github.com:tpope/vim-endwise.git
+[submodule "vim/.vim/bundle/vim-rhubarb"]
+	path = vim/.vim/bundle/vim-rhubarb
+	url = git@github.com:tpope/vim-rhubarb.git
