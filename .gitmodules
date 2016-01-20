@@ -47,3 +47,6 @@
 [submodule "vim/.vim/bundle/dogmatic.vim"]
 	path = vim/.vim/bundle/dogmatic.vim
 	url = git@github.com:mrmargolis/dogmatic.vim.git
+[submodule "vim/.vim/bundle/vim-fish"]
+	path = vim/.vim/bundle/vim-fish
+	url = https://github.com/dag/vim-fish
