@@ -50,3 +50,15 @@
 [submodule "vim/.vim/bundle/vim-fish"]
 	path = vim/.vim/bundle/vim-fish
 	url = https://github.com/dag/vim-fish
+[submodule "vim/.vim/bundle/vim-rails"]
+	path = vim/.vim/bundle/vim-rails
+	url = git@github.com:tpope/vim-rails.git
+[submodule "vim/.vim/bundle/vim-bundler"]
+	path = vim/.vim/bundle/vim-bundler
+	url = git@github.com:tpope/vim-bundler.git
+[submodule "vim/.vim/bundle/supertab"]
+	path = vim/.vim/bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "vim/.vim/bundle/vim-ruby"]
+	path = vim/.vim/bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
