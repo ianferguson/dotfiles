@@ -83,6 +83,7 @@ let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 
 "" vim-go settings/mappings
+" TODO: move to ftdefaults/go plugin
 aug vimgo-mapping
   au!
   au FileType go nmap <leader>r <Plug>(go-run)
