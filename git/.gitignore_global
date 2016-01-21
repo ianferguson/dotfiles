@@ -5,6 +5,7 @@
 .settings
 .project
 .classpath
+.checkstyle
 .pgpass
 .DS_Store
 *.swp
