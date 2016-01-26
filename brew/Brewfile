@@ -35,8 +35,11 @@ install pgformatter
 install go
 install groovy
 install lua
-install ruby
 install python
+# install ruby via rbenv
+install rbenv
+install ruby-build
+install rbenv-bundler
 
 # other assorted things
 install brew-pip
