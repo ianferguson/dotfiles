@@ -1,7 +1,7 @@
 [user]
   name = Ian Ferguson
-  email = ian@ianferguson.io
-  signingkey = F02FD45B
+  email = ian.ferguson@opower.com
+  signingkey = 4310CE8E
 
 [core]
   pager = less
