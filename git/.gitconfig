@@ -63,6 +63,7 @@
   dw = diff --word-diff -w
   fa = fetch --all --tags
   lo = log --oneline
+  lod = log --oneline --decorate
   ls = ls-files
   mf = merge --ff-only
   pt = push --tags
