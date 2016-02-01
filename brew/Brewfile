@@ -17,6 +17,7 @@ install bash
 install bash-completion
 install ctags
 install curl --with-ssh
+link --force curl
 install fish
 install git
 install gradle
