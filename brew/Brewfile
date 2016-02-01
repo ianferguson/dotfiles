@@ -16,7 +16,7 @@ install awscli
 install bash
 install bash-completion
 install ctags
-install curl
+install curl --with-ssh
 install fish
 install git
 install gradle
