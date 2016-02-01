@@ -101,3 +101,5 @@
 	host = github.va.opower.it
 [init]
 	templatedir = ~/.git_template
+[rebase]
+	autosquash = true
