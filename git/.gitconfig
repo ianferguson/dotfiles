@@ -49,10 +49,10 @@
   b = branch
   bd = branch -d
   c = commit
+  cf = commit --fixup
+  cff = commit --fixup HEAD
   cm = commit -m
   cma = commit --amend
-  cmf = commit --fixup
-  cmff = commit --fixup HEAD
   co = checkout
   cb = checkout -b
   cp = cherry-pick
