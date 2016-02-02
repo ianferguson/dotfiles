@@ -82,33 +82,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 
-"" vim-go settings/mappings
-" TODO: move to ftdefaults/go plugin
-aug vimgo-mapping
-  au!
-  au FileType go nmap <leader>r <Plug>(go-run)
-  au FileType go nmap <leader>b <Plug>(go-build)
-  au FileType go nmap <leader>t <Plug>(go-test)
-  au FileType go nmap <leader>c <Plug>(go-coverage)
-
-  au FileType go nmap <Leader>ds <Plug>(go-def-split)
-  au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-  au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-
-  au FileType go nmap <Leader>e <Plug>(go-rename)
-
-  au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
-  au FileType go nmap <Leader>gd <Plug>(go-doc)
-  au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-
-  au FileType go nmap <Leader>i <Plug>(go-info)
-  au FileType go nmap <Leader>s <Plug>(go-implements)
-aug END
-
-" fail gofmt silently in vim-go, since syntastic should be highlighting already for us
-let g:go_fmt_fail_silently = 0
-let g:go_fmt_command = "goimports"
-
 "" SQL setup
 " push things to default to using pg sql formatting
 let g:sql_type_default = 'pgsql'
