@@ -74,3 +74,6 @@
 [submodule "vim/.vim/bundle/vim-rbenv"]
 	path = vim/.vim/bundle/vim-rbenv
 	url = git@github.com:tpope/vim-rbenv.git
+[submodule "vim/.vim/bundle/vim-trailing-whitespace"]
+	path = vim/.vim/bundle/vim-trailing-whitespace
+	url = https://github.com/bronson/vim-trailing-whitespace
