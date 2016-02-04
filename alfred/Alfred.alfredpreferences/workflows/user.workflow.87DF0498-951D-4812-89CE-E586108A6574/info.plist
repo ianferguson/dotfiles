@@ -41,6 +41,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>command</key>
+				<integer>1</integer>
+				<key>confirm</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.systemcommand</string>
+			<key>uid</key>
+			<string>D069669A-A196-49E5-B6B1-8D0188E9884B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -56,21 +71,6 @@
 			<string>AA04605B-FAE4-4FD6-BF83-EDCBBAA99F9D</string>
 			<key>version</key>
 			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>command</key>
-				<integer>1</integer>
-				<key>confirm</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.systemcommand</string>
-			<key>uid</key>
-			<string>D069669A-A196-49E5-B6B1-8D0188E9884B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
