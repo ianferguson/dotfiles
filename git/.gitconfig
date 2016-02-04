@@ -95,8 +95,10 @@
 	prompt = false
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[url "”git@bitbucket.org:”"]
-	insteadOf = “https://bitbucket.org/”
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/
+[url "git@github.va.opower.it"]
+  insteadOf = https://github.va.opower.it/
 [hub]
 	host = github.va.opower.it
 [init]
