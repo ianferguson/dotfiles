@@ -97,7 +97,7 @@
 	insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
 	insteadOf = https://bitbucket.org/
-[url "git@github.va.opower.it"]
+[url "git@github.va.opower.it:"]
   insteadOf = https://github.va.opower.it/
 [hub]
 	host = github.va.opower.it
