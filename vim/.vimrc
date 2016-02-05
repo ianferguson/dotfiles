@@ -89,3 +89,5 @@ let g:sql_type_default = 'pgsql'
 " dbext profiles
 " let g:dbext_default_type = 'PGSQL'
 let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
+
+autocmd BufWritePre * :FixWhitespace
