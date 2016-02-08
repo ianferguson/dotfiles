@@ -4,7 +4,7 @@
   signingkey = F02FD45B
 
 [core]
-	pager = less
+  pager = less
   autocrlf = input
   #named non-standardly to avoid mixing
   #my dotfiles repo .gitignore with the .gitignore for global
@@ -19,14 +19,14 @@
 [push]
   #'git push' will push the current branch to its tracking branch
   #the usual default is to push all branches
-	default = current
+  default = current
 
 [diff]
   renames = copy # makes the diff much shorter when moving or copying files
   renamelimit = 0
   # comment out patience for a bit, eclipse git integration is breaking on it =/
   # algorithm = patience
-	tool = vimdiff
+  tool = vimdiff
   prompt = false
 
 [color]
@@ -58,7 +58,7 @@
   cp = cherry-pick
   cpa = cherry-pick --abort
   cpc = cherry-pick --continue
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
   d = diff -w
   dw = diff --word-diff -w
   fa = fetch --all --tags
@@ -90,18 +90,18 @@
   treed =  log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all --date-order
 
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
 [url "git@bitbucket.org:"]
-	insteadOf = https://bitbucket.org/
+  insteadOf = https://bitbucket.org/
 [url "git@github.va.opower.it:"]
   insteadOf = https://github.va.opower.it/
 [hub]
-	host = github.va.opower.it
+  host = github.va.opower.it
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
 [rebase]
-	autosquash = true
+  autosquash = true
