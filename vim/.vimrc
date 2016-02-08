@@ -12,6 +12,7 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set number
+set list
 
 filetype indent on
 filetype on

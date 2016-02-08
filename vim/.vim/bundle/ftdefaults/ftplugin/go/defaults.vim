@@ -1,6 +1,12 @@
 TagbarOpen
 highlight OverLength ctermfg=red guibg=#592929
 match OverLength /\%121v.\+/
+
+"" my main vimrc has set list on it, which is great
+"" for the majority of things that do not use tabs for indentation
+"" but not at all great in golang where tabs are the standard
+set nolist
+
 "" vim-go settings/mappings
 aug vimgo-mapping
   au!
