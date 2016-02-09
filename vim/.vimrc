@@ -91,4 +91,9 @@ let g:sql_type_default = 'pgsql'
 " let g:dbext_default_type = 'PGSQL'
 let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
 
+" run FixWhitespace plugin prior to writing the buffer -- will trim trailing
+" whitespace off of files
 autocmd BufWritePre * :FixWhitespace
+
+" create command to pretty print json
+com! Jsonpp %!python -m json.tool
