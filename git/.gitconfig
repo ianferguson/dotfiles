@@ -65,6 +65,7 @@
   lod = log --oneline --decorate
   ls = ls-files
   mf = merge --ff-only
+  pr = pull-request
   pt = push --tags
   r = reset
   rh = reset HEAD^
