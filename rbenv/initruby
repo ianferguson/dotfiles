@@ -1,0 +1,9 @@
+#!/bin/bash
+# ruby env setup to be done after homebrew installs
+set -e
+set -o pipefail
+set -o nounset
+
+rbenv init
+# TODO make a loop and install the versions you know you're going to need
+rbenv install 2.3.0
