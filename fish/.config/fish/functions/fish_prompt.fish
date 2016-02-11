@@ -87,5 +87,5 @@ function fish_prompt --description 'Write out the prompt'
 		)
 	end
 
-	echo -n -s (set_color $fish_color_user) "ian" $normal @ (set_color $fish_color_host) (cd ~/git/dotfiles 2> /dev/null; and git rev-parse --abbrev-ref HEAD; or echo "unknown") $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (__fish_git_prompt) $normal $prompt_status "$mode_str" "> "
+	echo -n -s (set_color $fish_color_user) "ian" $normal @ (set_color $fish_color_host) (pushd ~/git/dotfiles 2> /dev/null; and git rev-parse --abbrev-ref HEAD; or echo "unknown"; popd ) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (__fish_git_prompt) $normal $prompt_status "$mode_str" "> "
 end
