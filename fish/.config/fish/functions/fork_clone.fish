@@ -7,5 +7,6 @@ function fork_clone
   and git remote rename origin upstream
   and git remote rename ian-ferguson origin
   # git branch -u origin/master
+  git remote -v
   popd
 end
