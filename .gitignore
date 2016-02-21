@@ -2,6 +2,5 @@
 alfred/Alfred.alfredpreferences/preferences/local
 fish_history
 fishd.*
-fish/.config/configstore
-fish/.config/fish/functions/vertica.fish
-fish/.config/fish/functions/dncvpn.fish
+*/.config/configstore
+*/.config/hub
