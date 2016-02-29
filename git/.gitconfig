@@ -61,7 +61,8 @@
   d = diff
   dw = diff --word-diff -w
   fa = fetch --all --tags
-  lo = log --oneline
+  lo = log --oneline master..HEAD
+  lolo = log --oneline
   lod = log --oneline --decorate
   ls = ls-files
   mf = merge --ff-only
