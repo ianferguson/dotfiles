@@ -17,9 +17,9 @@
   autosetuprebase = always
 
 [push]
-  #'git push' will push the current branch to its tracking branch
-  #the usual default is to push all branches
-  default = current
+  # 'git push' will push the current branch to its tracking branch
+  # the usual default is to push all branches
+  default = upstream
 
 [diff]
   renames = copy # makes the diff much shorter when moving or copying files
