@@ -5,8 +5,7 @@ function gitup
     pushd "$dir";
     and git rev-parse --git-dir > /dev/null;
     and sem -j 16 'git fetch --all > /dev/null'
-    and sem -j 16 'git remote prune origin 2> /dev/null'
-    and sem -j 16 'git remote prune upstream 2> /dev/null'
+    and sem -j 16 'git remote | xargs -n1 git remote prune'
     popd "$dir";
   end
   sem --wait
