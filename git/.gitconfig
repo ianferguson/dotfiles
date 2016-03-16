@@ -47,6 +47,7 @@
   ap = add -p .
   b = branch
   bd = branch -d
+  br = branch -r
   c = commit
   cf = commit --fixup
   cff = commit --fixup HEAD
@@ -71,9 +72,10 @@
   r = reset
   rh = reset HEAD^
   rb = rebase
-  rbi = rebase -i
-  rbc = rebase --continue
   rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase -i
+  rbo = ! GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash
   rp = remote prune
   rpo = remote prune origin
   rv = remote -v
