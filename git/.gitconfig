@@ -9,7 +9,7 @@
   # named non-standardly to avoid mixing
   # my dotfiles repo .gitignore with the .gitignore for global
   # usage that is stored inside that repo and managed with stow
-  excludesfile = /Users/ian.ferguson/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = vim
 
 [branch]
