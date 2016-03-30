@@ -4,3 +4,4 @@ fish_history
 fishd.*
 */.config/configstore
 */.config/hub
+aws/.aws/credentials
