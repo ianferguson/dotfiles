@@ -1,6 +1,7 @@
 tap homebrew/versions
 tap caskroom/fonts
 tap homebrew/services
+tap homebrew/apache
 
 update
 
@@ -12,8 +13,10 @@ install htop-osx
 install watch
 install wget
 
-#key dev tools
+# dev tools
 install awscli
+# apache benchmark
+install ab
 install bash
 install bash-completion
 install ctags
@@ -23,14 +26,13 @@ install fish
 install git
 install gradle
 install maven
-install tomcat
 install tmux
 
 # postgres related
 install postgresql
-install pgbadger 
-install pg_top 
-install postgis 
+install pgbadger
+install pg_top
+install postgis
 install pgformatter
 
 # langs
@@ -45,20 +47,15 @@ install rbenv-bundler
 
 # other assorted things
 install brew-pip
-install dterm
-install emacs
 install fontconfig
 install freetype
 install fswatch
 install gist
-# was already install on machine and couldnt remember tag to not override existing links
 install gnupg
 install gpgme
 install httpie
-install irssi
 install jpeg
 install jsonpp
-install mercurial
 install netcat
 install nmap
 install node
@@ -72,7 +69,6 @@ install stow
 # reattach-to-user-namespace allows pbcopy/pbpaste and most importantly, launctl, to play nice with tmux
 install reattach-to-user-namespace
 
-pin tomcat
 pin postgresql
 
 cleanup
