@@ -7,3 +7,6 @@ set -gx GOROOT /usr/local/Cellar/go/*/libexec
 
 # do whatever horrible things rbenv needs to do to make ruby not as horrible
 status --is-interactive; and . (rbenv init -|psub)
+
+# bring docker-machine into env
+eval (docker-machine env)
