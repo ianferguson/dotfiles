@@ -48,6 +48,8 @@ install rbenv-bundler
 
 # other assorted things
 install brew-pip
+install docker
+install boot2docker
 install fontconfig
 install freetype
 install fswatch
