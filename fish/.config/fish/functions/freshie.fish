@@ -15,6 +15,6 @@ function freshie
   # and a few other tools that whine if its not set in the shell env, so
   # given that we've cleaned up all the unused things, there should only
   # be one version path under the Cellar/go, so glob that in
-
-  set -gx GOROOT (ls -1 /usr/local/Cellar/go/ | sort -n | tail -1)
+  set -e GOROOT;
+  set -Ux GOROOT (ls -1 /usr/local/Cellar/go/ | sort -n | tail -1)
 end
