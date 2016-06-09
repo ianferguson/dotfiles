@@ -97,3 +97,9 @@ autocmd BufWritePre * :FixWhitespace
 
 " create command to pretty print json
 com! Jsonpp %!python -m json.tool
+
+" turn on search highlighting
+set hlsearch
+
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
