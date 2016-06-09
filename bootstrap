@@ -1,6 +1,6 @@
 #!/bin/bash
 #setup homebrew, dotfiles on a new machine
-#not currently tested beyond the stow portion of things, 
+#not currently tested beyond the stow portion of things,
 #need to set up an empty vagrant image for testing first
 set -e
 set -o pipefail
@@ -68,6 +68,10 @@ fish universal_fish_vars
 
 #### Deploy Stow Stuff ####
 ./deploy_stow
+
+#### install fisher and run fish plugin install
+curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+fisher
 
 #### init local tomcat key store
 echo "setting up local keystore"
