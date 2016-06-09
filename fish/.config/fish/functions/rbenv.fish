@@ -1,0 +1,1 @@
+/Users/ian.ferguson/.config/fisherman/rbenv/functions/rbenv.fish
