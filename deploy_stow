@@ -13,14 +13,14 @@ echo "stowing stow files"
 stow --ignore ".DS_Store" -t ~ stow
 
 FLAGS="$*"
-STOWAWAYS=(bash_osx fish git psql tmux htop mongo ssh vim ctags aws)
+STOWAWAYS=(bash_osx fish git psql tmux htop mongo ssh vim ctags aws keybase)
 for STOWAWAY in ${STOWAWAYS[@]}; do
     echo "stowing $STOWAWAY"
     stow $FLAGS --adopt -t ~ $STOWAWAY
 done;
 
 # No longer full OS agnostic, but I also don't actually use these scripts
-# much on Linux, and when that time comes I'll just fix this along with the other 
+# much on Linux, and when that time comes I'll just fix this along with the other
 # 100 things I'm going to need to tweak
 # TODO, this may not actually work anymore, need to investigate -ian 2016-01-14
 KEY_TARGET="$HOME/Library/KeyBindings"
