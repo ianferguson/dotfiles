@@ -1,0 +1,21 @@
+#!/bin/bash
+# ruby env setup to be done after homebrew and fin installs
+set -e
+set -u
+set -o pipefail
+
+# ~/.rbenv should already exist via way of the snippet fired in the fin/fisherman rbenv plugin
+
+# add in default gems to add on install
+default_gems_plugin_dir="$(rbenv root)/plugins/rbenv-default-gems"
+if [ ! -d "$default_gems_plugin_dir" ]; then
+  git clone https://github.com/rbenv/rbenv-default-gems.git $default_gems_plugin_dir
+fi
+
+# ensure ruby default gems are in place
+pushd ~/git/dotfiles > /dev/null
+stow -R -v -t ~ rbenv
+popd
+
+rbenv install -f 2.2.0
+rbenv install -f 2.3.0

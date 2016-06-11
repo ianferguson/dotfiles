@@ -67,15 +67,16 @@ fi;
 fish universal_fish_vars
 
 #### Deploy Stow Stuff ####
-./deploy_stow
+# use the relative path within the repo, since we won't have placed the script in
+# the ~/bin and on path yes (i.e. it will place itself there while running
+./stow/bin/deploy_stow
 
 #### install fin and run fish plugin install
 curl -Lo ~/.config/fish/functions/fin.fish --create-dirs git.io/fin
 fish -c fin
 
-#### init local tomcat key store
-echo "setting up local keystore"
-"$JAVA_HOME/bin/keytool"  -genkey -alias tomcat -keyalg RSA
+#### run rbenv bootstrap install
+./ruby/bin/initruby
 
 popd > /dev/null
 popd > /dev/null
