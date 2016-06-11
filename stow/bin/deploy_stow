@@ -6,6 +6,9 @@ set -u
 set -e
 set -o pipefail
 
+# TODO don't hardcode the stow origination point
+pushd ~/git/dotfiles > /dev/null
+
 # check for stow, will have > 0 exist status if it isn't here, and set -e will cause exit
 stow -V
 
@@ -31,3 +34,5 @@ stow $FLAGS --adopt -t "$KEY_TARGET" osx_keys
 # is therere a smarter way to find where to drop the pg files?
 # this will work as long as homebrew is managing the install but no guaruntee otherwise
 stow $FLAGS --adopt -t /usr/local/var/postgres postgres
+
+popd > /dev/null
