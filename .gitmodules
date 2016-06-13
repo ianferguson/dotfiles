@@ -77,3 +77,12 @@
 [submodule "vim/.vim/bundle/vim-trailing-whitespace"]
 	path = vim/.vim/bundle/vim-trailing-whitespace
 	url = https://github.com/bronson/vim-trailing-whitespace
+[submodule "rbenv/.rbenv/plugins/ruby-build"]
+	path = rbenv/.rbenv/plugins/ruby-build
+	url = git@github.com:rbenv/ruby-build.git
+[submodule "rbenv/.rbenv/plugins/rbenv-ctags"]
+	path = rbenv/.rbenv/plugins/rbenv-ctags
+	url = git@github.com:tpope/rbenv-ctags.git
+[submodule "rbenv/.rbenv/plugins/rbenv-default-gems"]
+	path = rbenv/.rbenv/plugins/rbenv-default-gems
+	url = git@github.com:rbenv/rbenv-default-gems.git
