@@ -31,6 +31,13 @@ let g:ctrlp_by_filename = 1
 " ignore angular directives/attributes when linting
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
+" set supertab to choose mode contextually, i.e., magically use the right
+" gocode suggestions when I hit tab after a go token
+" if this stops working for go at some point in the future, or breaks
+" something else: just add let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+" to the ftdefaults for go files
+let g:SuperTabDefaultCompletionType = "context"
+
 " vim has supported fish shell since v7.4-256, and sensible already does this
 " for us anyways
 " if &shell =~# 'fish$'
