@@ -100,5 +100,6 @@ com! Jsonpp %!python -m json.tool
 " turn on search highlighting
 set hlsearch
 
-"This unsets the "last search pattern" register by hitting escape
-nnoremap <esc> :noh<return><esc>
+"This unsets the "last search pattern" register by hitting return
+nnoremap <return> :noh<return><return>
+
