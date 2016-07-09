@@ -101,5 +101,5 @@ com! Jsonpp %!python -m json.tool
 set hlsearch
 
 "This unsets the "last search pattern" register by hitting return
-nnoremap <return> :noh<return><return>
+nnoremap <silent> <return> :noh<return><return>
 
