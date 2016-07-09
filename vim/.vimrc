@@ -90,14 +90,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 
-"" SQL setup
-" push things to default to using pg sql formatting
-let g:sql_type_default = 'pgsql'
-
-" dbext profiles
-" let g:dbext_default_type = 'PGSQL'
-let g:dbext_default_profile_pg = 'type=PGSQL:user=postgres'
-
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
 " whitespace off of files
 autocmd BufWritePre * :FixWhitespace
@@ -108,5 +100,5 @@ com! Jsonpp %!python -m json.tool
 " turn on search highlighting
 set hlsearch
 
-"This unsets the "last search pattern" register by hitting return
-nnoremap <CR> :noh<CR><CR>
+"This unsets the "last search pattern" register by hitting escape
+nnoremap <esc> :noh<return><esc>
