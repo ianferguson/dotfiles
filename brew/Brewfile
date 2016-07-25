@@ -16,8 +16,6 @@ install wget
 
 # dev tools
 install awscli
-# apache benchmark
-install ab
 install bash
 install bash-completion
 install ctags
@@ -48,8 +46,6 @@ install rbenv-bundler
 
 # other assorted things
 install brew-pip
-install docker
-install boot2docker
 install fontconfig
 install freetype
 install fswatch
@@ -71,42 +67,6 @@ install ssh-copy-id
 install stow
 # reattach-to-user-namespace allows pbcopy/pbpaste and most importantly, launctl, to play nice with tmux
 install reattach-to-user-namespace
-
-# completions
-install apm-bash-completion
-install aptly-completion
-install boom-completion
-install boot2docker-completion
-install brew-cask-completion
-install bundler-completion
-install cap-completion
-install cargo-completion
-install composer-completion
-install ctest-completion
-install django-completion
-install docker-completion
-install docker-compose-completion
-install docker-machine-completion
-install fabric-completion
-install gem-completion
-install grunt-completion
-install kitchen-completion
-install maven-completion
-install mix-completion
-install open-completion
-install packer-completion
-install pip-completion
-install rails-completion
-install rake-completion
-install ruby-completion
-install rustc-completion
-install sonar-completion
-install spring-completion
-install stormssh-completion
-install t-completion
-install tmuxinator-completion
-install vagrant-completion
-install wpcli-completion
 
 pin postgresql
 
