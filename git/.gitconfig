@@ -1,7 +1,6 @@
 [user]
   name = Ian Ferguson
-  email = ian.ferguson@opower.com
-  signingkey = 4310CE8E
+  email = ian.j.ferguson@oracle.com
 
 [core]
   pager = less
