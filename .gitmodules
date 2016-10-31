@@ -79,3 +79,6 @@
 [submodule "vim/.vim/bundle/auto-pairs"]
 	path = vim/.vim/bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "vim/.vim/bundle/dbext.vim"]
+	path = vim/.vim/bundle/dbext.vim
+	url = git@github.com:vim-scripts/dbext.vim.git
