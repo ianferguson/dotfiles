@@ -6,11 +6,11 @@ cask update
 
 # java stuff
 cask install java
-cask install caskroom/versions/java6
 cask install caskroom/versions/java7
 cask install eclipse-java
 cask install intellij-idea-ce
 cask install visualvm
+cask install jce-unlimited-strength-policy
 
 # comms tools
 cask install adium
@@ -29,7 +29,7 @@ cask install wireshark
 
 # app launchers and env managers
 cask install alfred
-cask install bettertouchtool 
+cask install bettertouchtool
 cask install gpgtools
 cask install switchresx
 
