@@ -67,8 +67,8 @@
   lod = log --oneline --decorate
   ls = ls-files
   mf = merge --ff-only
-  pr = pull-request
   pt = push --tags
+  pushl = push --force-with-lease
   r = reset
   rh = reset HEAD^
   rb = rebase
