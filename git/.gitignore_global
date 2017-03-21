@@ -10,3 +10,6 @@
 .DS_Store
 *.swp
 target
+.externalToolBuilders/
+maven-eclipse.xml
+dependency-reduced-pom.xml
