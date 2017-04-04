@@ -8,8 +8,9 @@
 .checkstyle
 .pgpass
 .DS_Store
-*.swp
+*.sw?
 target
 .externalToolBuilders/
 maven-eclipse.xml
 dependency-reduced-pom.xml
+.vault-token
