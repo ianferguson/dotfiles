@@ -12,6 +12,9 @@
   excludesfile = ~/.gitignore_global
   editor = vim
 
+[commit]
+  gpgsign = true
+
 [branch]
   autosetupmerge = true
   autosetuprebase = always
@@ -111,3 +114,5 @@
 [filter "trimWhitespace"]
   # http://rubiquity.com/2014/02/12/avoid-whitespace-shame-git-stripspace.html
   clean = git-stripspace
+[commit]
+	gpgSign = true
