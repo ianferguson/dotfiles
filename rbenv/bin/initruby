@@ -19,3 +19,4 @@ popd
 
 rbenv install -f 2.2.0
 rbenv install -f 2.3.0
+rbenv install -f 2.3.1
