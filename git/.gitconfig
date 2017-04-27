@@ -61,23 +61,20 @@
   ctags = !.git/hooks/ctags
   d = diff
   dw = diff --word-diff -w
-  fa = fetch --all --tags
+  fa = fetch --all --tags --prune --progress
   lo = log --oneline master..HEAD
-  lolo = log --oneline
-  lod = log --oneline --decorate
+  lolo = log --oneline --decorate
   ls = ls-files
   mf = merge --ff-only
   pt = push --tags
   pushl = push --force-with-lease
   r = reset
-  rh = reset HEAD^
   rb = rebase
   rba = rebase --abort
   rbc = rebase --continue
   rbi = rebase -i
   rbo = ! GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash
-  rp = remote prune
-  rpo = remote prune origin
+  rpo = fetch --all --tags --prune --progress
   rv = remote -v
   s = status .
   sg = status
@@ -85,7 +82,6 @@
   sma = submodule add
   smi = submodule init
   smu  = submodule update
-  st = stash
   stc = stash clear
   stl = stash list
   stp = stash pop
