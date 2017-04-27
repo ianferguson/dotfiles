@@ -62,7 +62,8 @@
   d = diff
   dw = diff --word-diff -w
   fa = fetch --all --tags --prune --progress
-  lo = log --oneline master..HEAD
+  lo = log --oneline --decorate master..HEAD
+  lol = log --oneline --decorate -10
   lolo = log --oneline --decorate
   ls = ls-files
   mf = merge --ff-only
@@ -82,6 +83,7 @@
   sma = submodule add
   smi = submodule init
   smu  = submodule update
+  st = stash
   stc = stash clear
   stl = stash list
   stp = stash pop
