@@ -29,6 +29,6 @@ aug vimgo-mapping
   au FileType go nmap <Leader>s <Plug>(go-implements)
 aug END
 
-" fail gofmt silently in vim-go, since syntastic should be highlighting already for us
-let g:go_fmt_fail_silently = 0
 let g:go_fmt_command = "goimports"
+let g:go_info_mode='gocode'
+let g:go_test_show_name = 1

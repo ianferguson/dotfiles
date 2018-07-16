@@ -1,10 +1,34 @@
 " vimrc cobbled together from several sources/random additions, with copypasta bits cited by url.
 set nocompatible
-" easytags was killing performance and not worth the slowdown, but I may want it later - 2015-03-14 ian
-let g:pathogen_disabled = [ 'vim-easytags' ]
-call pathogen#incubate()
-call pathogen#helptags()
-execute pathogen#infect()
+
+call plug#begin()
+Plug 'airblade/vim-gitgutter'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'cespare/vim-toml'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dag/vim-fish'
+Plug 'elzr/vim-json'
+Plug 'ervandew/supertab'
+Plug 'exu/pgsql.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'majutsushi/tagbar'
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.17' , 'do': ':GoInstallBinaries'  }
+Plug 'mdempsky/gocode', { 'for': 'go', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh'  }
+" Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
+Plug 'mrmargolis/dogmatic.vim'
+Plug 'rbenv/rbenv-default-gems', { 'for': 'ruby' }
+Plug 'rbenv/ruby-build', { 'for': 'ruby' }
+Plug 'tpope/vim-bundler', { 'for': 'ruby' }
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'tpope/vim-rbenv', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-sensible'
+Plug 'vim-scripts/dbext.vim'
+Plug 'vim-syntastic/syntastic'
+Plug '~/.vim/bundle/ftdefaults'
+call plug#end()
 
 set tabstop=2
 set cmdheight=2
