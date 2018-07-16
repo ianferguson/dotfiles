@@ -87,7 +87,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_go_checkers = ["go", "gotype", "gofmt", "govet", "golint" ]
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
