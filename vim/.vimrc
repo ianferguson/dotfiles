@@ -28,6 +28,9 @@ let g:ctrlp_user_command = ['.git', 'cd %s; git ls-files']
 " default to just file name matching, not path for ctrp
 let g:ctrlp_by_filename = 1
 
+" include current buffer's file in the matching list
+let g:ctrlp_match_current_file = 1
+
 " ignore angular directives/attributes when linting
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
