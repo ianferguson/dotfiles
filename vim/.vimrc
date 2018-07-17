@@ -2,27 +2,27 @@
 set nocompatible
 
 call plug#begin()
-Plug 'airblade/vim-gitgutter'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'ervandew/supertab'
-Plug 'jiangmiao/auto-pairs'
-Plug 'majutsushi/tagbar'
-Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-sensible'
-Plug 'mrmargolis/dogmatic.vim'
-Plug 'vim-syntastic/syntastic'
-Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter', { 'commit': '6076c96' }
+Plug 'bronson/vim-trailing-whitespace', { 'commit': '4c59654' }
+Plug 'ctrlpvim/ctrlp.vim', { 'commit': '43cc73b' }
+Plug 'ervandew/supertab', { 'commit': '40fe711' }
+Plug 'jiangmiao/auto-pairs', { 'commit': 'f0019fc' }
+Plug 'majutsushi/tagbar', { 'commit': '387bbad' }
+Plug 'tpope/vim-rhubarb', { 'commit': '658f51d' }
+Plug 'tpope/vim-endwise', { 'commit': '21db2f8' }
+Plug 'tpope/vim-sensible', { 'commit': 'c82c6d4' }
+Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
+Plug 'vim-syntastic/syntastic', { 'tag': '3.9.0' }
+Plug 'scrooloose/nerdtree', { 'commit': 'd6032c8' }
 
 Plug 'ianferguson/ftdefaults'
 
-Plug 'dag/vim-fish', { 'for': 'fish' }
+Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.17' , 'do': ':GoInstallBinaries'  }
-Plug 'mdempsky/gocode', { 'for': 'go', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh'  }
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.17', 'do': ':GoInstallBinaries' }
+Plug 'mdempsky/gocode', { 'for': 'go', 'commit': '466551c', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
 
-Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
 
 Plug 'rbenv/rbenv-default-gems', { 'for': 'ruby' }
 Plug 'rbenv/ruby-build', { 'for': 'ruby' }
