@@ -4,30 +4,38 @@ set nocompatible
 call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'cespare/vim-toml'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'dag/vim-fish'
-Plug 'elzr/vim-json'
 Plug 'ervandew/supertab'
-Plug 'exu/pgsql.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-sensible'
+Plug 'mrmargolis/dogmatic.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'scrooloose/nerdtree'
+
+Plug 'ianferguson/ftdefaults'
+
+Plug 'dag/vim-fish', { 'for': 'fish' }
+
 Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.17' , 'do': ':GoInstallBinaries'  }
 Plug 'mdempsky/gocode', { 'for': 'go', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh'  }
-" Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
-Plug 'mrmargolis/dogmatic.vim'
+
+Plug 'elzr/vim-json', { 'for': 'json' }
+
 Plug 'rbenv/rbenv-default-gems', { 'for': 'ruby' }
 Plug 'rbenv/ruby-build', { 'for': 'ruby' }
 Plug 'tpope/vim-bundler', { 'for': 'ruby' }
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-rbenv', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-sensible'
-Plug 'vim-scripts/dbext.vim'
-Plug 'vim-syntastic/syntastic'
-Plug '~/.vim/bundle/ftdefaults'
+
+Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
+Plug 'exu/pgsql.vim', { 'for': 'sql' }
+
+Plug 'cespare/vim-toml', { 'for': 'toml' }
+
 call plug#end()
 
 set tabstop=2
@@ -122,6 +130,15 @@ autocmd BufWritePre * :FixWhitespace
 
 " create command to pretty print json
 com! Jsonpp %!python -m json.tool
+
+" quickfix window settings:
+augroup quickfix
+    autocmd!
+    " place quick fix buffer to the bottom
+    autocmd FileType qf wincmd J
+    " force quick fix to line wrap
+    autocmd FileType qf setlocal wrap
+augroup END
 
 " turn on search highlighting
 set hlsearch
