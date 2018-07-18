@@ -36,7 +36,12 @@ Plug 'exu/pgsql.vim', { 'for': 'sql' }
 
 Plug 'cespare/vim-toml', { 'for': 'toml' }
 
+Plug 'junegunn/seoul256.vim'
+
 call plug#end()
+
+let g:seoul256_background = 233
+colo seoul256
 
 set tabstop=2
 set cmdheight=2
