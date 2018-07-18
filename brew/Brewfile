@@ -38,6 +38,7 @@ install pgformatter
 install go
 install groovy
 install lua
+install node
 install python
 # install ruby via rbenv
 install rbenv
@@ -54,15 +55,15 @@ install gnupg
 install gpgme
 install httpie
 install jpeg
-install jsonpp
+install jq
 install netcat
 install nmap
-install node
 install openconnect
 install parallel
 # install from source to avoid accidentaly upgrading pg, if pg version number has been pinned
 install --build-from-source pgcli
 install readline
+install the_silver_searcher
 install ssh-copy-id
 install stow
 # reattach-to-user-namespace allows pbcopy/pbpaste and most importantly, launctl, to play nice with tmux

@@ -6,40 +6,28 @@ cask update
 
 # java stuff
 cask install java
-cask install caskroom/versions/java7
 cask install eclipse-java
-cask install intellij-idea-ce
-cask install visualvm
 cask install jce-unlimited-strength-policy
 
 # comms tools
-cask install adium
-cask install colloquy
-cask install hipchat
 cask install slack
 
 # assorted dev tools
-cask install cyberduck
 cask install iterm2
-cask install mysqlworkbench
 cask install pgadmin3
 cask install sourcetree
-cask install textwrangler
 cask install wireshark
 
 # app launchers and env managers
 cask install alfred
 cask install bettertouchtool
-cask install gpgtools
 cask install switchresx
 
 # assorted other things
-cask install cloak
 cask install google-chrome
 cask install grandperspective
 cask install keka
-cask install lastfm
-cask install little-snitch
+cask install keybase
 
 # VMs and images
 cask install vagrant

@@ -128,7 +128,10 @@ let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the enti
 
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
 " whitespace off of files
-autocmd BufWritePre * :FixWhitespace
+augroup cleanwhitespace
+    autocmd!
+    autocmd BufWritePre * :FixWhitespace
+augroup END
 
 " quickfix window settings:
 augroup quickfix
