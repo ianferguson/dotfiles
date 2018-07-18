@@ -40,9 +40,6 @@ Plug 'junegunn/seoul256.vim'
 
 call plug#end()
 
-let g:seoul256_background = 233
-colo seoul256
-
 set tabstop=2
 set cmdheight=2
 set shiftwidth=2
@@ -150,4 +147,7 @@ set hlsearch
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <return> :noh<return><return>
+
+let g:seoul256_background = 233
+colo seoul256
 
