@@ -130,9 +130,6 @@ let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the enti
 " whitespace off of files
 autocmd BufWritePre * :FixWhitespace
 
-" create command to pretty print json
-com! Jsonpp %!python -m json.tool
-
 " quickfix window settings:
 augroup quickfix
     autocmd!
