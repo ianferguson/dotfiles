@@ -127,6 +127,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 let g:syntastic_auto_jump = 0
+let g:syntastic_shell = "/bin/sh"
 
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
 " whitespace off of files
