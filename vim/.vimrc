@@ -14,12 +14,13 @@ Plug 'tpope/vim-sensible', { 'commit': 'c82c6d4' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
 Plug 'vim-syntastic/syntastic', { 'tag': '3.9.0' }
 Plug 'scrooloose/nerdtree', { 'commit': 'd6032c8' }
+Plug 'tpope/vim-commentary', { 'commit': '8295187' }
 
 Plug 'ianferguson/ftdefaults'
 
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.17', 'do': ':GoInstallBinaries' }
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.18', 'do': ':GoInstallBinaries' }
 Plug 'mdempsky/gocode', { 'for': 'go', 'commit': '466551c', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
 
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
