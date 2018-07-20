@@ -126,6 +126,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
+let g:syntastic_auto_jump = 0
 
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
 " whitespace off of files
@@ -138,6 +139,11 @@ augroup END
 augroup quickfix
     autocmd!
     " place quick fix buffer to the bottom
+    " This is problematic, as it doesn't play nice with location lists
+    " sometimes, but until vim-go supports using `botright copen` instead of
+    " `copen`, it seems like the least worst approach to ensuring that
+    " quickfix windows don't get pinned under the tagbar windows:
+    " https://github.com/fatih/vim-go/issues/108
     autocmd FileType qf wincmd J
     " force quick fix to line wrap
     autocmd FileType qf setlocal wrap
