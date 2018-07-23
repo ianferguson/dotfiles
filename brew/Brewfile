@@ -1,8 +1,5 @@
-tap homebrew/versions
 tap caskroom/fonts
 tap homebrew/services
-tap homebrew/apache
-tap homebrew/completions
 
 update
 
