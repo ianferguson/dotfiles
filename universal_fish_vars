@@ -10,7 +10,7 @@ set -Ux EDITOR vim -e
 
 # Go Pathes
 set -Ux GOROOT (go env GOROOT)
-set -Ux GOPATH ~/golang
+set -Ux GOPATH ~/go
 
 #### Java Pathing
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
