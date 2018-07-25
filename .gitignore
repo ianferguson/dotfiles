@@ -6,3 +6,6 @@ fishd.*
 */.config/hub
 aws/.aws/credentials
 vim/.vim/plugged
+rbenv/.rbenv/shims/
+rbenv/.rbenv/version
+rbenv/.rbenv/versions/
