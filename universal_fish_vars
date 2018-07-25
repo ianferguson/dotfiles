@@ -12,6 +12,10 @@ set -Ux EDITOR vim -e
 set -Ux GOROOT (go env GOROOT)
 set -Ux GOPATH ~/go
 
+# Home Brew configuration
+set HOMEBREW_NO_INSECURE_REDIRECT 1
+set HOMEBREW_CASK_OPTS "--require-sha"
+
 #### Java Pathing
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
 set -Ux JAVA_HOME (/usr/libexec/java_home)
@@ -19,3 +23,6 @@ set -Ux JAVA_HOME (/usr/libexec/java_home)
 # right after install, and all of my brew update scripts are hyper vigilant about
 # running brew clean, there should only ever be a single tomcat version installed
 set -Ux CATALINA_HOME /usr/local/Cellar/tomcat/*/libexec
+
+# Datadog specific things
+set -Ux DATADOG_ROOT "$HOME/dd"
