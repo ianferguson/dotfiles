@@ -156,6 +156,10 @@ set hlsearch
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <return> :noh<return><return>
 
+nnoremap <Leader>p :set invpaste paste?<CR>
+set pastetoggle=<Leader>p
+set showmode
+
 let g:seoul256_background = 233
 colo seoul256
 
