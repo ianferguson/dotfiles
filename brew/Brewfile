@@ -21,6 +21,7 @@ link --force curl
 install fish
 install git
 install gradle
+install hub
 install maven
 install tmux
 
