@@ -12,9 +12,17 @@ set -Ux GOROOT (go env GOROOT)
 set -Ux GOPATH ~/go
 
 # Home Brew configuration
-set HOMEBREW_NO_INSECURE_REDIRECT 1
-set HOMEBREW_CASK_OPTS "--require-sha"
+set -Ux HOMEBREW_NO_INSECURE_REDIRECT 1
+set -Ux HOMEBREW_CASK_OPTS "--require-sha"
 
 #### Java Pathing
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
 set -Ux JAVA_HOME (/usr/libexec/java_home)
+
+# AWS and Friends
+set -Ux AWS_VAULT_KEYCHAIN_NAME login
+set -Ux AWS_SESSION_TTL 24h
+set -Ux AWS_ASSUME_ROLE_TTL 1h
+
+# Datadog specific things
+set -Ux DATADOG_ROOT "$HOME/dd"
