@@ -34,7 +34,7 @@ fi
 
 #### generate new ssh keys ####
 if [ ! -f "$HOME/.ssh/id_rsa" ]; then
-  ssh-keygen
+  ssh-keygen -b 4096
 fi
 
 
