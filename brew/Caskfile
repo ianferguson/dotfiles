@@ -13,6 +13,8 @@ cask install eclipse-java
 cask install slack
 
 # assorted dev tools
+cask install aws-vault
+cask install chefdk
 cask install iterm2
 cask install pgadmin4
 cask install sourcetree
