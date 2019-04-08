@@ -1,11 +1,6 @@
 function fish_prompt --description 'Write out the prompt'
 	set -l last_status $status
 
-	# Just calculate this once, to save a few cycles when displaying the prompt
-	if not set -q __fish_prompt_hostname
-		set -g __fish_prompt_hostname (hostname|cut -d . -f 1)
-	end
-
 	set -l normal (set_color normal)
 
 	# Hack; fish_config only copies the fish_prompt function (see #736)
@@ -87,8 +82,5 @@ function fish_prompt --description 'Write out the prompt'
 		)
 	end
 
-set -l fish_dotfiles (dirname "$HOME/.config/fish/"(readlink $HOME/.config/fish/config.fish))
-set -l branch (pushd $fish_dotfiles; and git_branch_name; popd)
-
-	echo -n -s (set_color $fish_color_user) "ian" $normal @ (set_color $fish_color_host) $branch $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (__fish_git_prompt) $normal $prompt_status "$mode_str" "> "
+	echo -n -s (set_color $color_cwd) (prompt_pwd) $normal (__fish_git_prompt) $normal $prompt_status "$mode_str" "> "
 end
