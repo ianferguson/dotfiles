@@ -71,10 +71,6 @@ fish universal_fish_vars
 # the ~/bin and on path yet (i.e. it will place itself there while running
 ./stow/bin/deploy_stow
 
-#### install fin and run fish plugin install
-curl -Lo ~/.config/fish/functions/fin.fish --create-dirs git.io/fin
-fish -c fin
-
 #### run rbenv bootstrap install
 ./ruby/bin/initruby
 
