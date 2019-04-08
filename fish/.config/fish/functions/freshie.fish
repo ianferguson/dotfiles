@@ -1,9 +1,5 @@
 function freshie -d 'Update fish plugins, dotfiles symlinks and homebrew packages'
 
-  # update fish plugins
-  echo "updating fin"
-  fin
-
   # init/update git submodules as needed
   echo "updating dotfile submodules"
   pushd (find_dotfiles)
