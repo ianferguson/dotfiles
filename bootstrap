@@ -68,7 +68,7 @@ fish universal_fish_vars
 
 #### Deploy Stow Stuff ####
 # use the relative path within the repo, since we won't have placed the script in
-# the ~/bin and on path yes (i.e. it will place itself there while running
+# the ~/bin and on path yet (i.e. it will place itself there while running
 ./stow/bin/deploy_stow
 
 #### install fin and run fish plugin install
