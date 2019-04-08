@@ -1,7 +1,7 @@
 #!/usr/local/bin/fish
 # should be run once to set initial universal env vars on a new install, after tool installation is complete
 
-set -Ux fish_greeting "Good morning sunshine"
+set -Ux fish_greeting "Good morning sunshine!"
 
 # Default editor, etc
 set -Ux PAGER vimpager
