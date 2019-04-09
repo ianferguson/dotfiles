@@ -7,3 +7,6 @@
 [submodule "rbenv/.rbenv/plugins/rbenv-default-gems"]
 	path = rbenv/.rbenv/plugins/rbenv-default-gems
 	url = git@github.com:rbenv/rbenv-default-gems.git
+[submodule "rbenv/.rbenv/plugins/bundler"]
+	path = rbenv/.rbenv/plugins/bundler
+	url = git@github.com:carsomyr/rbenv-bundler.git
