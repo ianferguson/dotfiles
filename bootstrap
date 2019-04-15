@@ -26,6 +26,8 @@ elif [ "Darwin" = "$UNAME" ]; then
   ruby "/tmp/install_brew.rb"
   rm "/tmp/install_brew.rb"
   OS="osx"
+  mkdir ~/Desktop/screenshots
+  defaults write com.apple.screencapture location ~/Desktop/screenshots
 else
   "Don't know what to do with stowaways with a uname of $UNAME"
   exit 1;
