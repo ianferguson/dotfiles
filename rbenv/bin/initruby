@@ -4,11 +4,11 @@ set -e
 set -u
 set -o pipefail
 
-# ~/.rbenv should already exist via way of the snippet fired in the fin/fisherman rbenv plugin
 
 # add in default gems to add on install
 default_gems_plugin_dir="$(rbenv root)/plugins/rbenv-default-gems"
 if [ ! -d "$default_gems_plugin_dir" ]; then
+  mkdir -p "$default_gems_plugin_dir"
   git clone https://github.com/rbenv/rbenv-default-gems.git $default_gems_plugin_dir
 fi
 
