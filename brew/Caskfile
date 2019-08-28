@@ -15,21 +15,14 @@ cask install slack
 # assorted dev tools
 cask install aws-vault
 cask install chefdk
-cask install iterm2
 cask install pgadmin4
 cask install sourcetree
 cask install wireshark
-
-# app launchers and env managers
-cask install alfred
-cask install bettertouchtool
-cask install switchresx
 
 # assorted other things
 cask install google-chrome
 cask install grandperspective
 cask install keka
-cask install keybase
 
 # VMs and images
 cask install vagrant
@@ -44,10 +37,6 @@ cask install qlprettypatch
 
 # fonts
 cask install font-inconsolata
-
-# link in casks to alfred
-# no longer appears to work as of 2016-01-13
-# cask alfred link
 
 # clear out any download caches
 cask cleanup
