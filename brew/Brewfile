@@ -48,11 +48,6 @@ install brew-pip
 install fontconfig
 install freetype
 install fswatch
-install gist
-install gnupg
-install gpgme
-install httpie
-install jpeg
 install jq
 install moreutils
 install netcat
