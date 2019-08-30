@@ -1,6 +1,5 @@
 #!/usr/local/bin/fish
 # should be run once to set initial universal env vars on a new install, after tool installation is complete
-
 set -Ux fish_greeting "Good morning sunshine!"
 
 # Default editor, etc
@@ -19,10 +18,3 @@ set HOMEBREW_CASK_OPTS "--require-sha"
 #### Java Pathing
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
 set -Ux JAVA_HOME (/usr/libexec/java_home)
-# CATALINA_HOME is a little dodgy, but given that this script should only really run
-# right after install, and all of my brew update scripts are hyper vigilant about
-# running brew clean, there should only ever be a single tomcat version installed
-set -Ux CATALINA_HOME /usr/local/Cellar/tomcat/*/libexec
-
-# Datadog specific things
-set -Ux DATADOG_ROOT "$HOME/dd"
