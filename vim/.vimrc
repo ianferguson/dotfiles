@@ -2,25 +2,25 @@
 set nocompatible
 
 call plug#begin()
-Plug 'airblade/vim-gitgutter', { 'commit': '6076c96' }
+Plug 'airblade/vim-gitgutter', { 'commit': '7be1f830925' }
 Plug 'bronson/vim-trailing-whitespace', { 'commit': '4c59654' }
-Plug 'ctrlpvim/ctrlp.vim', { 'commit': '43cc73b' }
+Plug 'ctrlpvim/ctrlp.vim', { 'commit': '2e773fd8c7' }
 Plug 'ervandew/supertab', { 'commit': '40fe711' }
-Plug 'jiangmiao/auto-pairs', { 'commit': 'f0019fc' }
+Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a' }
 Plug 'majutsushi/tagbar', { 'commit': '387bbad' }
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb', { 'commit': '658f51d' }
-Plug 'tpope/vim-endwise', { 'commit': '21db2f8' }
-Plug 'tpope/vim-sensible', { 'commit': 'c82c6d4' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.0' }
+Plug 'tpope/vim-rhubarb', { 'commit': '75ad917' }
+Plug 'tpope/vim-endwise', { 'commit': 'f67d022169bd' }
+Plug 'tpope/vim-sensible', { 'commit': '5dc6eb2d80' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
 Plug 'vim-syntastic/syntastic', { 'tag': '3.9.0' }
-Plug 'tpope/vim-commentary', { 'commit': '8295187' }
+Plug 'tpope/vim-commentary', { 'commit': '141d9d32a9f' }
 
 Plug 'ianferguson/ftdefaults'
 
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.18', 'do': ':GoInstallBinaries' }
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.20', 'do': ':GoInstallBinaries' }
 Plug 'mdempsky/gocode', { 'for': 'go', 'commit': '466551c', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
 
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
