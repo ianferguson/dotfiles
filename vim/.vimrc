@@ -56,7 +56,10 @@ filetype on
 filetype plugin on
 syntax on
 
-" disable vim-json's double quote hiding #TooMuchMagic
+" hashivim/vim-terraform config
+let g:terraform_fmt_on_save = 1
+
+"disable vim-json's double quote hiding #TooMuchMagic
 let g:vim_json_syntax_conceal = 0
 
 " use git ls-files to drive ctrlp
