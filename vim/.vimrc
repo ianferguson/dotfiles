@@ -37,6 +37,8 @@ Plug 'exu/pgsql.vim', { 'for': 'sql' }
 
 Plug 'cespare/vim-toml', { 'for': 'toml' }
 
+Plug 'hashivim/vim-hashicorp-tools', { 'for': ['hcl','tf','terraform'] }
+
 Plug 'junegunn/seoul256.vim'
 
 call plug#end()
