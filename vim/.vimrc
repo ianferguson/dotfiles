@@ -13,7 +13,7 @@ Plug 'tpope/vim-rhubarb', { 'commit': '75ad917' }
 Plug 'tpope/vim-endwise', { 'commit': 'f67d022169bd' }
 Plug 'tpope/vim-sensible', { 'commit': '5dc6eb2d80' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
-Plug 'vim-syntastic/syntastic', { 'tag': '3.9.0' }
+Plug 'vim-syntastic/syntastic', { 'commit': '0336c35' }
 Plug 'tpope/vim-commentary', { 'commit': '141d9d32a9f' }
 
 Plug 'ianferguson/ftdefaults'
@@ -133,6 +133,12 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
 let g:syntastic_auto_jump = 0
 let g:syntastic_shell = "/bin/sh"
+" json-lint, the default syntastic json checker takes ~400ms to start and
+" check a small json file, which is not worth it for how little use it is on
+" a json file compared to normal syntax highlighting, so disable it from
+" startup
+let g:syntastic_mode_map = { 'passive_filetypes': ['json']  }
+
 
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
 " whitespace off of files
