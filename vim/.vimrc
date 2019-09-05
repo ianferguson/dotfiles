@@ -8,6 +8,7 @@ Plug 'ctrlpvim/ctrlp.vim', { 'commit': '43cc73b' }
 Plug 'ervandew/supertab', { 'commit': '40fe711' }
 Plug 'jiangmiao/auto-pairs', { 'commit': 'f0019fc' }
 Plug 'majutsushi/tagbar', { 'commit': '387bbad' }
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb', { 'commit': '658f51d' }
 Plug 'tpope/vim-endwise', { 'commit': '21db2f8' }
 Plug 'tpope/vim-sensible', { 'commit': 'c82c6d4' }
