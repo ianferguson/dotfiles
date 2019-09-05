@@ -14,7 +14,6 @@ Plug 'tpope/vim-endwise', { 'commit': '21db2f8' }
 Plug 'tpope/vim-sensible', { 'commit': 'c82c6d4' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
 Plug 'vim-syntastic/syntastic', { 'tag': '3.9.0' }
-Plug 'scrooloose/nerdtree', { 'commit': 'd6032c8' }
 Plug 'tpope/vim-commentary', { 'commit': '8295187' }
 
 Plug 'ianferguson/ftdefaults'
