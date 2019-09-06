@@ -56,6 +56,9 @@ filetype on
 filetype plugin on
 syntax on
 
+" nudge vim to use system clipboard
+set clipboard=unnamed
+
 " hashivim/vim-terraform config
 let g:terraform_fmt_on_save = 1
 
@@ -167,6 +170,7 @@ set hlsearch
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <return> :noh<return><return>
 
+" paste mode toggle
 nnoremap <Leader>p :set invpaste paste?<CR>
 set pastetoggle=<Leader>p
 set showmode
