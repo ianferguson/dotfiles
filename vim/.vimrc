@@ -13,7 +13,7 @@ Plug 'tpope/vim-rhubarb', { 'commit': '75ad917' }
 Plug 'tpope/vim-endwise', { 'commit': 'f67d022169bd' }
 Plug 'tpope/vim-sensible', { 'commit': '5dc6eb2d80' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
-Plug 'vim-syntastic/syntastic', { 'commit': '0336c35' }
+Plug 'dense-analysis/ale', { 'commit': '6e18c03' }
 Plug 'tpope/vim-commentary', { 'commit': '141d9d32a9f' }
 
 Plug 'ianferguson/ftdefaults'
@@ -59,6 +59,9 @@ syntax on
 " nudge vim to use system clipboard
 set clipboard=unnamed
 
+" dense-analysis/ale auto pop open loclist with issue
+let g:ale_open_list = 1
+
 " hashivim/vim-terraform config
 let g:terraform_fmt_on_save = 1
 
@@ -73,9 +76,6 @@ let g:ctrlp_by_filename = 1
 
 " include current buffer's file in the matching list
 let g:ctrlp_match_current_file = 1
-
-" ignore angular directives/attributes when linting
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
 
 " set supertab to choose mode contextually, i.e., magically use the right
 " gocode suggestions when I hit tab after a go token
@@ -108,7 +108,7 @@ set statusline+=%=                            " left/right alignment separator
 
 " right side:
 set statusline+=%#warningmsg#                 " name following highlight group
-set statusline+=%{SyntasticStatuslineFlag()}  " include syntastic status flag/highlighting
+" set statusline+=%{SyntasticStatuslineFlag()}  " include syntastic status flag/highlighting
 set statusline+=%*                            " pop back to standard highlighting
 set statusline+=[%02n]                        " buffer number
 set statusline+=[                             " open buffer pos/size bracket
@@ -127,21 +127,6 @@ hi StatusLineNC ctermfg=245 ctermbg=235
 " clear sign column formatting so it matches up with the line number column
 hi clear SignColumn
 "" end of status line settings
-
-"" syntastic settings:
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_java_javac_autoload_maven_classpath = 0 " dont autoload the entire maven classpath
-let g:syntastic_auto_jump = 0
-let g:syntastic_shell = "/bin/sh"
-" json-lint, the default syntastic json checker takes ~400ms to start and
-" check a small json file, which is not worth it for how little use it is on
-" a json file compared to normal syntax highlighting, so disable it from
-" startup
-let g:syntastic_mode_map = { 'passive_filetypes': ['json']  }
-
 
 " run FixWhitespace plugin prior to writing the buffer -- will trim trailing
 " whitespace off of files
