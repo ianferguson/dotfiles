@@ -45,13 +45,22 @@ Plug 'junegunn/seoul256.vim'
 
 call plug#end()
 
-set tabstop=2
-set cmdheight=2
-set shiftwidth=2
-set expandtab
 set autoindent
-set number
+set autoread                    " Automatically reread changed files without asking me anything
+set backspace=indent,eol,start  " Makes backspace key more powerful.
+set cmdheight=2
+set expandtab
+set hlsearch                 " turn on search highlighting
+set ignorecase               " Search case insensitive...
 set list
+set nobackup                 " Don't create annoying backup files
+set noswapfile               " Don't use swapfile
+set number
+set pumheight=10             " Completion window max size
+set shiftwidth=2
+set showcmd                  " Show me what I'm typing
+set smartcase                " ... but not it begins with upper case
+set tabstop=2
 
 filetype indent on
 filetype on
@@ -86,12 +95,6 @@ let g:ctrlp_match_current_file = 1
 " to the ftdefaults for go files
 let g:SuperTabDefaultCompletionType = "context"
 
-" vim has supported fish shell since v7.4-256, and sensible already does this
-" for us anyways
-" if &shell =~# 'fish$'
-"        set shell=sh
-" endif
-
 "" statusline settings
 " somewhat taken from http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
 " another good resource: http://learnvimscriptthehardway.stevelosh.com/chapters/17.html
@@ -110,15 +113,12 @@ set statusline+=%=                            " left/right alignment separator
 
 " right side:
 set statusline+=%#warningmsg#                 " name following highlight group
-" set statusline+=%{SyntasticStatuslineFlag()}  " include syntastic status flag/highlighting
 set statusline+=%*                            " pop back to standard highlighting
 set statusline+=[%02n]                        " buffer number
 set statusline+=[                             " open buffer pos/size bracket
 set statusline+=%c,                           " cursor column
 set statusline+=%l                            " cursor line
 set statusline+=]                             " close buffer pos/size bracket
-" set statusline+=/%L                          " total lines
-" set statusline+=\ %P                         " percent through file
 set statusline+=\                             " padding from right
 
 " status colors:
@@ -150,9 +150,6 @@ augroup quickfix
     " force quick fix to line wrap
     autocmd FileType qf setlocal wrap
 augroup END
-
-" turn on search highlighting
-set hlsearch
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <return> :noh<return><return>
