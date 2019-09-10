@@ -15,6 +15,8 @@ Plug 'tpope/vim-sensible', { 'commit': '5dc6eb2d80' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
 Plug 'dense-analysis/ale', { 'commit': '6e18c03' }
 Plug 'tpope/vim-commentary', { 'commit': '141d9d32a9f' }
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'ianferguson/ftdefaults'
 
