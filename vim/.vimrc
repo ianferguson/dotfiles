@@ -79,14 +79,11 @@ let g:terraform_fmt_on_save = 1
 "disable vim-json's double quote hiding #TooMuchMagic
 let g:vim_json_syntax_conceal = 0
 
-" use git ls-files to drive ctrlp
-let g:ctrlp_user_command = ['.git', 'cd %s; git ls-files']
-
-" default to just file name matching, not path for ctrp
-let g:ctrlp_by_filename = 1
-
-" include current buffer's file in the matching list
-let g:ctrlp_match_current_file = 1
+" kien/ctrl-p
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp' " cache ctrlp results
+let g:ctrlp_user_command = ['.git', 'cd %s; git ls-files . -co --exclude-standard', 'ag %s -l --no-color -g ""'] " use git ls-files to drive ctrlp
+let g:ctrlp_by_filename = 1 " default to just file name matching, not path for
+let g:ctrlp_match_current_file = 1 " include current buffer's file in the matching list
 
 " set supertab to choose mode contextually, i.e., magically use the right
 " gocode suggestions when I hit tab after a go token
