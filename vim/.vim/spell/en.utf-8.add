@@ -14,3 +14,6 @@ jdbi
 hikari
 autopatcher
 POJO
+Kubernetes
+YAML
+Datadog
