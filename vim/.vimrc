@@ -80,6 +80,9 @@ let g:terraform_fmt_on_save = 1
 let g:vim_json_syntax_conceal = 0
 
 " kien/ctrl-p
+let g:ctrlp_use_caching = 1
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_dotfiles = 1
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp' " cache ctrlp results
 let g:ctrlp_user_command = ['.git', 'cd %s; git ls-files . -co --exclude-standard', 'ag %s -l --no-color -g ""'] " use git ls-files to drive ctrlp
 let g:ctrlp_by_filename = 1 " default to just file name matching, not path for
