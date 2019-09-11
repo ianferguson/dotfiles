@@ -19,6 +19,7 @@ install ctags
 install curl --with-ssh
 link --force curl
 install fish
+install fzf
 install git
 install gradle
 install hub
