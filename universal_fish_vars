@@ -5,7 +5,7 @@ set -Ux fish_greeting "Good morning sunshine!"
 # Default editor, etc
 set -Ux PAGER vimpager
 set -Ux VISUAL vim
-set -Ux EDITOR vim -e
+set -Ux EDITOR vim
 
 # Go Pathes
 set -Ux GOROOT (go env GOROOT)

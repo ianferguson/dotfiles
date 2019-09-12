@@ -6,7 +6,7 @@ update
 # setup gnu utils in place of os x provided enes
 install gcc
 install vim --override-system-vi
-install vimpager
+install vimpager --HEAD
 install htop-osx
 install watch
 install wget
