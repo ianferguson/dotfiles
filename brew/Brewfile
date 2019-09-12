@@ -24,6 +24,8 @@ install git
 install gradle
 install hub
 install maven
+install kubectx
+install kubernetes-cli
 install tmux
 
 # postgres related
