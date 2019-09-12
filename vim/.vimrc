@@ -83,8 +83,9 @@ augroup END
 " nudge vim to use system clipboard
 set clipboard=unnamed
 
-" dense-analysis/ale auto pop open loclist with issue
-let g:ale_open_list = 1
+" dense-analysis/ale
+let g:ale_open_list = 1           " Auto open loclist for ale issues
+let g:ale_list_window_size = 4    " Set ale loclist size to 4
 
 " hashivim/vim-terraform config
 let g:terraform_fmt_on_save = 1
