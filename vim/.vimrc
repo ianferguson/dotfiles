@@ -7,7 +7,7 @@ Plug 'bronson/vim-trailing-whitespace', { 'commit': '4c59654' }
 Plug 'junegunn/fzf', {  'commit': '80b5bc1', 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab', { 'commit': '40fe711' }
-Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a' }
+" Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a' }
 Plug 'majutsushi/tagbar', { 'commit': '387bbad' }
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.0' }
 Plug 'tpope/vim-rhubarb', { 'commit': '75ad917' }
