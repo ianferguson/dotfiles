@@ -68,12 +68,20 @@ filetype on
 filetype plugin on
 syntax on
 
-augroup vimrc
-  au!
-  " Unset paste on InsertLeave
-  au InsertLeave * silent! set nopaste
+" paste mode toggle
+nnoremap <Leader>p :set invpaste paste?<CR>
+set pastetoggle=<Leader>p
+set showmode
 
-  " Automatic rename of tmux window
+" Unset paste on InsertLeave
+augroup exitinsertexitpaste
+  au!
+  au InsertLeave * silent! set nopaste
+augroup END
+
+" Automatic rename of tmux window
+augroup renametmuxwindow
+  au!
   if exists('$TMUX') && !exists('$NORENAME')
     au BufEnter * if empty(&buftype) | call system('tmux rename-window '.expand('%:t:S')) | endif
     au VimLeave * call system('tmux set-window automatic-rename on')
@@ -163,11 +171,6 @@ augroup END
 
 "This unsets the "last search pattern" register by hitting return
 nnoremap <silent> <return> :noh<return><return>
-
-" paste mode toggle
-nnoremap <Leader>p :set invpaste paste?<CR>
-set pastetoggle=<Leader>p
-set showmode
 
 let g:seoul256_background = 233
 colo seoul256
