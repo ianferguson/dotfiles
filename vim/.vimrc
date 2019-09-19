@@ -47,6 +47,9 @@ Plug 'junegunn/seoul256.vim'
 call plug#end()
 
 set autoindent
+" autochdir is disabled to play nice with vim-go+gopls and go modules right
+" now: https://github.com/fatih/vim-go/issues/2263
+" set autochdir                   " Set working dir to directory of the file in the current buffer
 set autoread                    " Automatically reread changed files without asking me anything
 set backspace=indent,eol,start  " Makes backspace key more powerful.
 set cmdheight=2
