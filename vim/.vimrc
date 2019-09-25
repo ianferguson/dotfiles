@@ -7,7 +7,7 @@ Plug 'bronson/vim-trailing-whitespace', { 'commit': '4c59654' }
 Plug 'junegunn/fzf', {  'commit': '80b5bc1', 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab', { 'commit': '40fe711' }
-" Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a' }
+Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a', 'for': 'go' }
 Plug 'majutsushi/tagbar', { 'commit': '387bbad' }
 Plug 'tpope/vim-fugitive', { 'tag': 'v3.0' }
 Plug 'tpope/vim-rhubarb', { 'commit': '75ad917' }
@@ -24,7 +24,7 @@ Plug 'ianferguson/ftdefaults'
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
 Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.20', 'do': ':GoInstallBinaries' }
-Plug 'mdempsky/gocode', { 'for': 'go', 'commit': '466551c', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
+Plug 'stamblerre/gocode', { 'for': 'go', 'commit': '466551c', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
 
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
 
@@ -123,6 +123,7 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " left side:
 set statusline=                               " clear statusline
+set statusline+=[%02n]                        " buffer number
 set statusline+=%y                            " filetype
 set statusline+=\                             " padding from filetype to name
 " set statusline+=%f                          " full filename, if desired
@@ -135,7 +136,7 @@ set statusline+=%=                            " left/right alignment separator
 " right side:
 set statusline+=%#warningmsg#                 " name following highlight group
 set statusline+=%*                            " pop back to standard highlighting
-set statusline+=[%02n]                        " buffer number
+set statusline +=\ %{fugitive#statusline()}
 set statusline+=[                             " open buffer pos/size bracket
 set statusline+=%c,                           " cursor column
 set statusline+=%l                            " cursor line
