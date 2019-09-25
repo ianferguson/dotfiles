@@ -123,7 +123,7 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " left side:
 set statusline=                               " clear statusline
-set statusline+=[%02n]                        " buffer number
+set statusline+=[#%n]                        " buffer number
 set statusline+=%y                            " filetype
 set statusline+=\                             " padding from filetype to name
 " set statusline+=%f                          " full filename, if desired
@@ -180,3 +180,9 @@ let g:seoul256_background = 233
 colo seoul256
 hi Normal cterm=NONE ctermbg=NONE
 
+" aggressively highlight TKTK, since I never mean to commit those notes
+highlight default tktkColor ctermbg=darkred guibg=darkred
+augroup HiglightTODO
+    autocmd!
+    autocmd BufRead,BufNew,WinEnter,VimEnter * :silent! call matchadd('tktkColor', 'TKTK', -1)
+augroup END

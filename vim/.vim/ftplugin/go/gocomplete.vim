@@ -1,1 +1,1 @@
-/Users/ian/.vim/plugged/gocode/vim/ftplugin/go/gocomplete.vim
+/Users/ian.ferguson/.vim/plugged/gocode/vim/ftplugin/go/gocomplete.vim
