@@ -1,5 +1,6 @@
 tap caskroom/cask
 tap homebrew/cask-fonts
+tap homebrew/cask-versions
 
 # install caskroom/cask/brew-cask
 
@@ -13,8 +14,12 @@ cask install eclipse-java
 cask install slack
 
 # assorted dev tools
+cask install alacritty
 cask install aws-vault
 cask install chefdk
+cask install docker
+cask install goland
+cask install google-cloud-sdk
 cask install pgadmin4
 cask install sourcetree
 cask install wireshark

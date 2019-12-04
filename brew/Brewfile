@@ -20,12 +20,15 @@ install curl --with-ssh
 link --force curl
 install fish
 install fzf
+install gimme
 install git
 install gradle
 install hub
 install maven
 install kubectx
 install kubernetes-cli
+install shellcheck
+install tfenv
 install tmux
 
 # postgres related
@@ -45,6 +48,8 @@ install python
 install rbenv
 install ruby-build
 install rbenv-bundler
+install terraform
+install terraform_landscape
 
 # other assorted things
 install brew-pip
