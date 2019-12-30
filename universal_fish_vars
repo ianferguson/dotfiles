@@ -24,5 +24,3 @@ set -Ux AWS_VAULT_KEYCHAIN_NAME login
 set -Ux AWS_SESSION_TTL 24h
 set -Ux AWS_ASSUME_ROLE_TTL 1h
 
-# Datadog specific things
-set -Ux DATADOG_ROOT "$HOME/dd"
