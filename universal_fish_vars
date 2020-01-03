@@ -33,6 +33,11 @@ set -p paths_to_prepend_if_not_present ~/.fzf/bin
 
 # prepend paths we want on the user's path, but only if they are not already on the fish_user_paths var
 for path in $paths_to_prepend_if_not_present
+  # if fish_user_paths is not yet set, set it and make it universal
+  set -q fish_user_paths
+  or set -U fish_user_paths $path
+
+  # check if fish user paths contains our candidate and prepend if not present
   contains $path $fish_user_paths
   or set -p fish_user_paths $path
 end
