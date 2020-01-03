@@ -20,13 +20,22 @@ if [ "Linux" = "$UNAME" ]; then
   OS="linux"
 elif [ "Darwin" = "$UNAME" ]; then
   #### install dev tools, Homebrew and git ####
-  xcode-select --install
-  read -p "press return when xcode cli tools install is complete to continue"
-  curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install" > "/tmp/install_brew.rb"
-  ruby "/tmp/install_brew.rb"
-  rm "/tmp/install_brew.rb"
+  xcode-select -p
+  if [[ "$?" -gt 0 ]]; then
+    xcode-select --install
+    read -p "press return when xcode cli tools install is complete to continue"
+  else
+    echo "xcode cli tools already installed"
+  fi
+
+  brew=$(which brew)
+  if [[ -z "$brew" ]]; then
+    curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install" > "/tmp/install_brew.rb"
+    ruby "/tmp/install_brew.rb"
+    rm "/tmp/install_brew.rb"
+  fi
   OS="osx"
-  mkdir ~/Desktop/screenshots
+  mkdir -p ~/Desktop/screenshots
   defaults write com.apple.screencapture location ~/Desktop/screenshots
 else
   "Don't know what to do with stowaways with a uname of $UNAME"
@@ -74,7 +83,7 @@ fish universal_fish_vars
 ./stow/bin/deploy_stow
 
 #### run rbenv bootstrap install
-./ruby/bin/initruby
+./rbenv/bin/initruby
 
 popd > /dev/null
 popd > /dev/null
