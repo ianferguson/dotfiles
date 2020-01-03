@@ -1,4 +1,4 @@
-tap caskroom/cask
+tap homebrew/cask
 tap homebrew/cask-fonts
 tap homebrew/cask-versions
 
@@ -11,21 +11,20 @@ cask install java
 cask install eclipse-java
 
 # comms tools
-cask install slack
+# cask install slack
 
 # assorted dev tools
 cask install alacritty
 cask install aws-vault
-cask install chefdk
+cask install chef/chef/chefdk
 cask install docker
 cask install goland
 cask install google-cloud-sdk
 cask install pgadmin4
 cask install sourcetree
-cask install wireshark
 
 # assorted other things
-cask install google-chrome
+# cask install google-chrome
 cask install grandperspective
 cask install keka
 
@@ -43,5 +42,3 @@ cask install qlprettypatch
 # fonts
 cask install font-inconsolata
 
-# clear out any download caches
-cask cleanup

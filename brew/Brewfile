@@ -1,11 +1,10 @@
-tap caskroom/fonts
 tap homebrew/services
 
 update
 
 # setup gnu utils in place of os x provided enes
 install gcc
-install vim --override-system-vi
+install vim
 install vimpager --HEAD
 install htop-osx
 install watch
@@ -16,7 +15,7 @@ install awscli
 install bash
 install bash-completion
 install ctags
-install curl --with-ssh
+install curl
 link --force curl
 install fish
 install fzf
@@ -28,7 +27,6 @@ install maven
 install kubectx
 install kubernetes-cli
 install shellcheck
-install tfenv
 install tmux
 
 # postgres related
@@ -48,7 +46,7 @@ install python
 install rbenv
 install ruby-build
 install rbenv-bundler
-install terraform
+install tfenv
 install terraform_landscape
 
 # other assorted things
