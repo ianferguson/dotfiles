@@ -24,3 +24,14 @@ set -Ux AWS_VAULT_KEYCHAIN_NAME login
 set -Ux AWS_SESSION_TTL 24h
 set -Ux AWS_ASSUME_ROLE_TTL 1h
 
+set -Ux RBENV_SHELL fish
+
+# prepend paths we want on the user's path
+set -p fish_user_paths ~/.rbenv/shims
+set -p fish_user_paths /usr/local/sbin
+set -p fish_user_paths ~/bin
+set -p fish_user_paths ~/.fzf/bin
+
+# use awk to dedupe but preserve ordering
+set -U fish_user_paths (echo $fish_user_paths | tr ' ' '\n' | awk '!uniq[$0]++')
+
