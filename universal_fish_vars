@@ -30,6 +30,8 @@ set -p paths_to_prepend_if_not_present ~/.rbenv/shims
 set -p paths_to_prepend_if_not_present /usr/local/sbin
 set -p paths_to_prepend_if_not_present ~/bin
 set -p paths_to_prepend_if_not_present ~/.fzf/bin
+set -p paths_to_prepend_if_not_present $GOPATH/bin
+set -p paths_to_prepend_if_not_present ~/Library/Python/3.7/bin
 
 # prepend paths we want on the user's path, but only if they are not already on the fish_user_paths var
 for path in $paths_to_prepend_if_not_present
