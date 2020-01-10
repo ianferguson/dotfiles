@@ -99,7 +99,23 @@ let g:ale_open_list = 1           " Auto open loclist for ale issues
 let g:ale_list_window_size = 4    " Set ale loclist size to 4
 
 " hashivim/vim-terraform config
-let g:terraform_fmt_on_save = 1
+" we can't use `let g:terraform_fmt_on_save = 1` to just let the plugin handle
+" everything because terraform fmt does not place nice with tfvars files:
+" https://github.com/hashicorp/terraform/issues/19280
+" and the plugin's default fmt on save saves not based on filetype, but
+" non-configurably on file suffix:
+" https://github.com/hashivim/vim-terraform/blob/bff65bf59401ef7d165637aedafe72f212ddf4c7/ftplugin/terraform.vim#L52-L58
+" and the maintainer of the vim-terraform plugin indicated that that behavior
+" was intended and not going to change:
+" https://github.com/hashivim/vim-terraform/issues/129
+" so instead, we've just ripped out the relevant bits here:
+let g:terraform_fmt_on_save = 0
+if get(g:, 'terraform_fmt_on_save', 0)
+  augroup vim.terraform.fmt
+    autocmd!
+    autocmd BufWritePre *.tf call terraform#fmt()
+  augroup END
+endif
 
 "disable vim-json's double quote hiding #TooMuchMagic
 let g:vim_json_syntax_conceal = 0
@@ -186,3 +202,4 @@ augroup HiglightTODO
     autocmd!
     autocmd BufRead,BufNew,WinEnter,VimEnter * :silent! call matchadd('tktkColor', 'TKTK', -1)
 augroup END
+
