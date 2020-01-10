@@ -3,6 +3,7 @@ tap homebrew/services
 update
 
 # setup gnu utils in place of os x provided enes
+install coreutils
 install gcc
 install vim
 install vimpager --HEAD
