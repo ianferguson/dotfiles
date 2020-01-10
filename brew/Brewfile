@@ -21,6 +21,7 @@ install fish
 install fzf
 install gimme
 install git
+install gox
 install gradle
 install hub
 install maven
