@@ -2,20 +2,20 @@
 set nocompatible
 
 call plug#begin()
-Plug 'airblade/vim-gitgutter', { 'commit': '7be1f830925' }
-Plug 'bronson/vim-trailing-whitespace', { 'commit': '4c59654' }
-Plug 'junegunn/fzf', {  'commit': '80b5bc1', 'dir': '~/.fzf', 'do': './install --all'  }
+Plug 'airblade/vim-gitgutter', { 'commit': '0e509fb' }
+Plug 'bronson/vim-trailing-whitespace', { 'commit': '6b7cdec' }
+Plug 'junegunn/fzf', { 'tag': '0.21.0-1', 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab', { 'commit': '40fe711' }
 Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a', 'for': 'go' }
-Plug 'majutsushi/tagbar', { 'commit': '387bbad' }
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.0' }
-Plug 'tpope/vim-rhubarb', { 'commit': '75ad917' }
-Plug 'tpope/vim-endwise', { 'commit': 'f67d022169bd' }
-Plug 'tpope/vim-sensible', { 'commit': '5dc6eb2d80' }
+Plug 'majutsushi/tagbar', { 'commit': '679a9d9' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
+Plug 'tpope/vim-rhubarb', { 'commit': '5130596' }
+Plug 'tpope/vim-endwise', { 'commit': 'bf90d8b' }
+Plug 'tpope/vim-sensible', { 'commit': '2d9f34c' }
 Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
-Plug 'dense-analysis/ale', { 'commit': '6e18c03' }
-Plug 'tpope/vim-commentary', { 'commit': '141d9d32a9f' }
+Plug 'dense-analysis/ale', { 'commit': 'bbe5153f' }
+Plug 'tpope/vim-commentary', { 'commit': 'f8238d7' }
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -23,8 +23,8 @@ Plug 'ianferguson/ftdefaults'
 
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.21', 'do': ':GoInstallBinaries' }
-Plug 'stamblerre/gocode', { 'for': 'go', 'commit': '466551c', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.22', 'do': ':GoInstallBinaries' }
+Plug 'stamblerre/gocode', { 'for': 'go', 'commit': 'b039731', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
 
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
 
