@@ -122,7 +122,7 @@ let g:vim_json_syntax_conceal = 0
 
 " junegunn/fzf
 nnoremap <c-p> :FZF<cr>
-nnoremap <c-p> :Tags<cr>
+nnoremap <c-o> :Tags<cr>
 let g:fzf_layout = { 'down': '~20%'  }
 
 
