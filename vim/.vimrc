@@ -60,6 +60,7 @@ set list
 set nobackup                 " Don't create annoying backup files
 set noswapfile               " Don't use swapfile
 set number
+set relativenumber
 set pumheight=10             " Completion window max size
 set shiftwidth=2
 set showcmd                  " Show me what I'm typing
@@ -70,6 +71,13 @@ filetype indent on
 filetype on
 filetype plugin on
 syntax on
+
+" do some fancy auto switching between relative and absolute line numbers
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 " paste mode toggle
 nnoremap <Leader>p :set invpaste paste?<CR>
