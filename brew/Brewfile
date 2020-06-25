@@ -15,7 +15,9 @@ install wget
 install awscli
 install bash
 install bash-completion
-install ctags
+# Replaced exuberant ctags with universal ctags
+# install ctags
+install --HEAD universal-ctags/universal-ctags/universal-ctags
 install curl
 link --force curl
 install fish
