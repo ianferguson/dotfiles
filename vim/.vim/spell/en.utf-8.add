@@ -51,3 +51,6 @@ ACLs
 JWTs
 mTLS
 Datadog's
+enablement
+Exfiltration
+exfiltration
