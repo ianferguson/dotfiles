@@ -30,8 +30,6 @@ Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
 
 Plug 'rbenv/rbenv-default-gems', { 'for': 'ruby' }
 Plug 'rbenv/ruby-build', { 'for': 'ruby' }
-Plug 'tpope/vim-bundler', { 'for': 'ruby' }
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
 Plug 'tpope/vim-rbenv', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 
