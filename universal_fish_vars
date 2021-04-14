@@ -8,7 +8,7 @@ set -Ux VISUAL vim
 set -Ux EDITOR vim
 
 # Go Pathes
-set -Ux GOROOT (go env GOROOT)
+# set -Ux GOROOT (go env GOROOT)
 set -Ux GOPATH ~/go
 
 # Home Brew configuration
