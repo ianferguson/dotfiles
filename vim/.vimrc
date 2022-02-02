@@ -2,20 +2,20 @@
 set nocompatible
 
 call plug#begin()
-Plug 'airblade/vim-gitgutter', { 'commit': '0e509fb' }
-Plug 'bronson/vim-trailing-whitespace', { 'commit': '6b7cdec' }
-Plug 'junegunn/fzf', { 'tag': '0.21.0-1', 'dir': '~/.fzf', 'do': './install --all'  }
+Plug 'airblade/vim-gitgutter', { 'commit': '256702d' }
+Plug 'bronson/vim-trailing-whitespace', { 'commit': '05f068e' }
+Plug 'junegunn/fzf', { 'tag': '0.28.0', 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
-Plug 'ervandew/supertab', { 'commit': '40fe711' }
+Plug 'ervandew/supertab', { 'commit': 'f0093ae' }
 Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a', 'for': 'go' }
-Plug 'majutsushi/tagbar', { 'commit': '679a9d9' }
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.2' }
-Plug 'tpope/vim-rhubarb', { 'commit': '5130596' }
-Plug 'tpope/vim-endwise', { 'commit': 'bf90d8b' }
+Plug 'majutsushi/tagbar', { 'commit': '0441c1c' }
+Plug 'tpope/vim-fugitive', { 'tag': 'v3.6' }
+Plug 'tpope/vim-rhubarb', { 'commit': '977b3cc' }
+Plug 'tpope/vim-endwise', { 'commit': '4289889' }
 Plug 'tpope/vim-sensible', { 'commit': '2d9f34c' }
-Plug 'mrmargolis/dogmatic.vim', { 'commit': 'fe10d5d' }
-Plug 'dense-analysis/ale', { 'commit': 'bbe5153f' }
-Plug 'tpope/vim-commentary', { 'commit': 'f8238d7' }
+Plug 'mrmargolis/dogmatic.vim', { 'commit': '2859de8' }
+Plug 'dense-analysis/ale', { 'commit': '5b792c7' }
+Plug 'tpope/vim-commentary', { 'commit': '627308e' }
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -23,8 +23,8 @@ Plug 'ianferguson/ftdefaults'
 
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.22', 'do': ':GoInstallBinaries' }
-Plug 'stamblerre/gocode', { 'for': 'go', 'commit': 'b039731', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.25', 'do': ':GoInstallBinaries' }
+Plug 'stamblerre/gocode', { 'for': 'go', 'commit': '78599a3', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
 
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
 
