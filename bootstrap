@@ -2,8 +2,7 @@
 #setup homebrew, dotfiles on a new machine
 #not currently tested beyond the stow portion of things,
 #need to set up an empty vagrant image for testing first
-set -e
-set -o pipefail
+set -x
 
 pushd $(dirname $0) > /dev/null
 
@@ -19,20 +18,10 @@ if [ "Linux" = "$UNAME" ]; then
   sudo apt-get install stow git -y;
   OS="linux"
 elif [ "Darwin" = "$UNAME" ]; then
-  #### install dev tools, Homebrew and git ####
-  xcode-select -p
-  if [[ "$?" -gt 0 ]]; then
-    xcode-select --install
-    read -p "press return when xcode cli tools install is complete to continue"
-  else
-    echo "xcode cli tools already installed"
-  fi
-
   brew=$(which brew)
   if [[ -z "$brew" ]]; then
-    curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/master/install" > "/tmp/install_brew.rb"
-    ruby "/tmp/install_brew.rb"
-    rm "/tmp/install_brew.rb"
+    curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh" > "/tmp/install_brew.sh"
+    bash /tmp/install_brew.sh
   fi
   OS="osx"
   mkdir -p ~/Desktop/screenshots
@@ -65,7 +54,7 @@ git submodule update
 #### install brew bundles ####
 if [ "osx" = "$OS" ]; then
   pushd brew > /dev/null
-  ./starter
+  # ./starter
   brew doctor || true
   popd > /dev/null
 else

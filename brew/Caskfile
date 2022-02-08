@@ -2,44 +2,39 @@ tap homebrew/cask
 tap homebrew/cask-fonts
 tap homebrew/cask-versions
 
-# install caskroom/cask/brew-cask
-
-# cask update
-
 # java stuff
-cask install java
-cask install eclipse-java
+install java
+install eclipse-java
 
 # comms tools
-# cask install slack
+# install slack
 
 # assorted dev tools
-cask install 1password-cli
-cask install alacritty
-cask install aws-vault
-cask install chef/chef/chefdk
-cask install docker
-cask install goland
-cask install google-cloud-sdk
-cask install pgadmin4
-cask install sourcetree
+install 1password-cli
+install alacritty
+install aws-vault
+install chef/chef/chefdk
+install docker
+install goland
+install google-cloud-sdk
+install pgadmin4
+install sourcetree
 
 # assorted other things
-# cask install google-chrome
-cask install grandperspective
-cask install keka
+install grandperspective
+install keka
 
 # VMs and images
-cask install vagrant
-cask install virtualbox
+install vagrant
+# install virtualbox
 
 # quicklook plugins
-cask install quicklook-json
-cask install quicklook-csv
-cask install qlcolorcode
-cask install qlmarkdown
-cask install qlprettypatch
+install quicklook-json
+install quicklook-csv
+install qlcolorcode
+install qlmarkdown
+install qlprettypatch
 
 # fonts
-cask install font-inconsolata
+install font-inconsolata
 

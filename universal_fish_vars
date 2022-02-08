@@ -17,7 +17,7 @@ set -Ux HOMEBREW_CASK_OPTS "--require-sha"
 
 #### Java Pathing
 set -Ux JAVA_TOOL_OPTIONS '-Djava.awt.headless=true'
-set -Ux JAVA_HOME (/usr/libexec/java_home)
+# set -Ux JAVA_HOME (/usr/libexec/java_home)
 
 # AWS and Friends
 set -Ux AWS_VAULT_KEYCHAIN_NAME login
