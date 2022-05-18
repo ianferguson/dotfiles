@@ -13,27 +13,13 @@ install eclipse-java
 install 1password-cli
 install alacritty
 install aws-vault
-install chef/chef/chefdk
 install docker
 install goland
 install google-cloud-sdk
 install pgadmin4
-install sourcetree
 
 # assorted other things
 install grandperspective
-install keka
-
-# VMs and images
-install vagrant
-# install virtualbox
-
-# quicklook plugins
-install quicklook-json
-install quicklook-csv
-install qlcolorcode
-install qlmarkdown
-install qlprettypatch
 
 # fonts
 install font-inconsolata
