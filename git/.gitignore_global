@@ -16,3 +16,4 @@ dependency-reduced-pom.xml
 .vault-token
 tags
 .idea/
+.terraform.lock.hcl
