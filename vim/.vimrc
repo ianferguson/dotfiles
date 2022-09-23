@@ -23,8 +23,7 @@ Plug 'ianferguson/ftdefaults'
 
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
 
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.25', 'do': ':GoInstallBinaries' }
-Plug 'stamblerre/gocode', { 'for': 'go', 'commit': '78599a3', 'rtp': 'vim', 'do':'~/.vim/plugged/gocode/vim/symlink.sh' }
+Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.26', 'do': ':GoInstallBinaries' }
 
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
 
