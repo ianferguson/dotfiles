@@ -17,3 +17,6 @@ dependency-reduced-pom.xml
 tags
 .idea/
 .terraform.lock.hcl
+terraform.tfstate
+.terraform/
+terraform.tfstate.backup
