@@ -2,41 +2,36 @@
 set nocompatible
 
 call plug#begin()
-Plug 'airblade/vim-gitgutter', { 'commit': '256702d' }
-Plug 'bronson/vim-trailing-whitespace', { 'commit': '05f068e' }
-Plug 'junegunn/fzf', { 'tag': '0.28.0', 'dir': '~/.fzf', 'do': './install --all'  }
+Plug 'airblade/vim-gitgutter', { 'commit': '7b0b509' }
+Plug 'bronson/vim-trailing-whitespace', { 'commit': '5540b3f' }
+Plug 'junegunn/fzf', { 'tag': 'v0.57.0', 'dir': '~/.fzf', 'do': './install --all'  }
 Plug 'junegunn/fzf.vim'
-Plug 'ervandew/supertab', { 'commit': 'f0093ae' }
+Plug 'ervandew/supertab', { 'commit': '8c638fe' }
 Plug 'jiangmiao/auto-pairs', { 'commit': '39f06b873a', 'for': 'go' }
-Plug 'majutsushi/tagbar', { 'commit': '0441c1c' }
-Plug 'tpope/vim-fugitive', { 'tag': 'v3.6' }
-Plug 'tpope/vim-rhubarb', { 'commit': '977b3cc' }
-Plug 'tpope/vim-endwise', { 'commit': '4289889' }
-Plug 'tpope/vim-sensible', { 'commit': '2d9f34c' }
-Plug 'mrmargolis/dogmatic.vim', { 'commit': '2859de8' }
+Plug 'majutsushi/tagbar', { 'commit': '8de7694' }
+Plug 'tpope/vim-fugitive', { 'commit': '174230d' }
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-endwise', { 'commit': '5ec72ee' }
+Plug 'tpope/vim-sensible', { 'commit': '0ce2d84' }
+Plug 'tpope/vim-surround', { 'commit': '3d188ed' }
+Plug 'mrmargolis/dogmatic.vim'
 Plug 'dense-analysis/ale', { 'commit': '5b792c7' }
-Plug 'tpope/vim-commentary', { 'commit': '627308e' }
+Plug 'tpope/vim-commentary', { 'commit': '64a654e' }
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'ianferguson/ftdefaults'
 
 Plug 'dag/vim-fish', { 'for': 'fish', 'commit': '50b95cb' }
-
-Plug 'fatih/vim-go', { 'for': 'go', 'tag': 'v1.26', 'do': ':GoInstallBinaries' }
-
+Plug 'fatih/vim-go', { 'for': 'go', 'commit': '6adc82b', 'do': ':GoInstallBinaries' }
 Plug 'elzr/vim-json', { 'for': 'json', 'commit': '3727f08' }
-
 Plug 'rbenv/rbenv-default-gems', { 'for': 'ruby' }
 Plug 'rbenv/ruby-build', { 'for': 'ruby' }
 Plug 'tpope/vim-rbenv', { 'for': 'ruby' }
 Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-
 Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
 Plug 'exu/pgsql.vim', { 'for': 'sql' }
-
 Plug 'cespare/vim-toml', { 'for': 'toml' }
-
 Plug 'hashivim/vim-hashicorp-tools', { 'for': ['hcl','tf','terraform'] }
 
 Plug 'junegunn/seoul256.vim'
