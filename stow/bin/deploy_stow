@@ -16,7 +16,7 @@ echo "stowing stow files"
 stow --ignore ".DS_Store" -t ~ stow
 
 FLAGS="$*"
-STOWAWAYS=(alacritty bash_osx fish git psql tmux htop ssh vim ctags aws keybase rbenv docker)
+STOWAWAYS=(alacritty bash_osx fish git psql tmux htop ssh vim ctags aws keybase rbenv docker ag)
 for STOWAWAY in ${STOWAWAYS[@]}; do
     echo "stowing $STOWAWAY"
     stow $FLAGS --adopt -t ~ $STOWAWAY
