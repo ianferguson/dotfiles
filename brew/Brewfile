@@ -15,8 +15,6 @@ install wget
 install awscli
 install bash
 install bash-completion
-# Replaced exuberant ctags with universal ctags
-# install ctags
 install --HEAD universal-ctags/universal-ctags/universal-ctags
 install curl
 link --force curl
@@ -25,28 +23,15 @@ install fzf
 install gimme
 install git
 install gox
-install gradle
 install hub
-install maven
 install kubectx
 install kubernetes-cli
 install shellcheck
 install tmux
 
-# postgres related
-install postgresql
-install pgbadger
-install pg_top
-install postgis
-install pgformatter
-
 # langs
 install go
-install groovy
-install lua
-install node
 install python
-# install ruby via rbenv
 install rbenv
 install ruby-build
 install rbenv-bundler
@@ -62,9 +47,6 @@ install jq
 install moreutils
 install netcat
 install nmap
-install openconnect
-# install from source to avoid accidentaly upgrading pg, if pg version number has been pinned
-install --build-from-source pgcli
 install readline
 install the_silver_searcher
 install ssh-copy-id
@@ -72,7 +54,5 @@ install stow
 # reattach-to-user-namespace allows pbcopy/pbpaste and most importantly, launctl, to play nice with tmux
 install reattach-to-user-namespace
 install vault
-
-pin postgresql
 
 cleanup

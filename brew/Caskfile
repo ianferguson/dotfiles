@@ -1,26 +1,7 @@
-tap homebrew/cask
-tap homebrew/cask-fonts
-tap homebrew/cask-versions
-
-# java stuff
-install java
-install eclipse-java
-
-# comms tools
-# install slack
-
-# assorted dev tools
 install 1password-cli
 install alacritty
 install aws-vault
 install docker
-install goland
 install google-cloud-sdk
-install pgadmin4
-
-# assorted other things
-install grandperspective
-
-# fonts
 install font-inconsolata
 

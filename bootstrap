@@ -33,8 +33,8 @@ fi
 
 
 #### generate new ssh keys ####
-if [ ! -f "$HOME/.ssh/id_rsa" ]; then
-  ssh-keygen -b 4096
+if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
+  ssh-keygen 
 fi
 
 
@@ -54,7 +54,7 @@ git submodule update
 #### install brew bundles ####
 if [ "osx" = "$OS" ]; then
   pushd brew > /dev/null
-  # ./starter
+  ./starter
   brew doctor || true
   popd > /dev/null
 else
