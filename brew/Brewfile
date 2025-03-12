@@ -39,7 +39,6 @@ install tfenv
 install terraform_landscape
 
 # other assorted things
-install brew-pip
 install fontconfig
 install freetype
 install fswatch

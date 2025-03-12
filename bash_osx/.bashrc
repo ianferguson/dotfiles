@@ -6,3 +6,5 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

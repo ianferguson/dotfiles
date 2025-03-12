@@ -54,7 +54,7 @@ git submodule update
 #### install brew bundles ####
 if [ "osx" = "$OS" ]; then
   pushd brew > /dev/null
-  ./starter
+#  ./starter
   brew doctor || true
   popd > /dev/null
 else
