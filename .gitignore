@@ -10,3 +10,6 @@ rbenv/.rbenv/shims/
 rbenv/.rbenv/version
 rbenv/.rbenv/versions/
 docker/.docker
+aws/.aws/config
+aws/.aws/cli/
+aws/.aws/sso/

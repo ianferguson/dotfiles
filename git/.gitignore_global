@@ -2,6 +2,7 @@
 **/.config/fish/generated_completions
 **/.config/fish/fish_read_history
 **/.config/fish/fishd.*
+.vscode
 .settings
 .project
 .classpath
@@ -20,3 +21,4 @@ tags
 terraform.tfstate
 .terraform/
 terraform.tfstate.backup
+.cursor/
