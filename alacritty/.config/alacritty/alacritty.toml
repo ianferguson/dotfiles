@@ -559,7 +559,7 @@ foreground = "0xb6b6b6"
 
 [[colors.indexed_colors]]
 index = 153
-color = "0xffd787"
+color = "0x87d7af"
 
 [cursor]
 style = "Block"
