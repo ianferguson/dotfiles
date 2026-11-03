@@ -535,7 +535,7 @@ draw_bold_text_with_bright_colors = true
 
 [colors.bright]
 black = "0x666666"
-blue = "0x0000ff"
+blue = "0x99bbff"
 cyan = "0x00e5e5"
 green = "0x00d900"
 magenta = "0xe500e5"
@@ -545,7 +545,7 @@ yellow = "0xe5e500"
 
 [colors.normal]
 black = "0x000000"
-blue = "0x0000b2"
+blue = "0x6699ff"
 cyan = "0x00a6b2"
 green = "0x00a600"
 magenta = "0xb200b2"
