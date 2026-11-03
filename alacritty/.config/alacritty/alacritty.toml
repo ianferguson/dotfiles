@@ -557,6 +557,10 @@ yellow = "0x999900"
 background = "0x000000"
 foreground = "0xb6b6b6"
 
+[[colors.indexed_colors]]
+index = 153
+color = "0xffd787"
+
 [cursor]
 style = "Block"
 unfocused_hollow = true
